@@ -1,0 +1,65 @@
+<header>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="col-md-7 col-sm-7" id="branding">
+                <h1 class="title_site">
+                    <a href="index.php" class="logo_harim">Dr. Harim Arias</a>
+                    <a href="index.php" class="subtitle">Traumatólogo y ortopedista</a>
+                    <a href="index.php" class="title">Dr. Harim Arias Gutiérrez</a>
+                </h1>
+            </div>
+            <div class="col-md-1 col-sm-1">
+                <ul class="social">
+                    <li><a class="lk">Linkedin</a></li>
+                    <li><a class="fb">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <button class="btn-cta schedule">
+                    Agenda tu consulta
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav onmouseleave="submenu_close();">
+    <div class="hamburger" onclick="menu_open();">
+        <div class="hamburger-inner"></div>
+        <ul class="menu-mobile">
+            <li class=""><a href="html/soluciones.php">Las soluciones para ti</a></li>
+            <li class=""><a href="html/categorias.php">Nuestros productos</a></li>
+            <li class=""><!--<a href="html/categorias.php">Diseña tu experiencia</a>--></li>
+        </ul>
+    </div>
+    <ul class="menu-desk">
+        <li class="first"></li>
+        <li class="" onmouseover="submenu_close();"><a href="html/soluciones.php">Experiencia</a></li>
+        <li class="" >
+            <a href="html/categorias.php" onmouseover="submenu_open();" class="submenu_open">Padecimientos</a>
+            <ul class="menulv2" id="sumbenulv2" onmouseover="submenu_open();">
+                <li class="sublv1"><a href="html/categorias.php" class="machine">Máquinas</a></li>
+                <li class="sublv1"><a href="html/categorias.php" class="grain">Insumos</a></li>
+                <li class="sublv1"><a href="html/categorias.php" class="mug">Accesorios</a></li>
+            </ul>
+        </li>
+        <li class="" onmouseover="submenu_close();"><a href="html/contacto.php">Servicios</a></li>
+        <li class="last" onmouseover="submenu_close();"><a href="html/contacto.php">Contacto</a></li>
+    </ul>
+
+    <ul class="menu-fixed">
+        <li class="fix-feather">
+            <button class="">hoja</button>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+            </ul>
+        </li>
+        <li class="fix-account">
+            <button class="">cuenta</button>
+            <ul>
+                <li><a href="html/dashboard.php">Mi cuenta</a></li>
+                <li><a onclick="show_menu1();">Cerrar sesión</a></li>
+            </ul>
+        </li>
+        <li class="fix-cart"><button class="" onclick="location.href='html/cart.php'">carrito</button></li>
+    </ul>
+</nav>
