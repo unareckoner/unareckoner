@@ -1,0 +1,7 @@
+.sass-cache/
+bootstrap-sass-master/assets/stylesheets/.sass-cache/
+bootstrap-sass-master/assets/stylesheets/bootstrap.css.map
+css/styles.css.map
+.DS_Store
+**/.DS_Store
+/nestle2/nbproject/private/
