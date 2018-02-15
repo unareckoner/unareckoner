@@ -1,0 +1,73 @@
+/* ======= HEADER ======= */
+
+header {
+    float: left;
+    width: 100%;
+    .container {
+        max-width: 1250px;
+        background: white;
+        .title_site {
+            a {
+                text-decoration: none;
+                font-family: $gotham-medium;
+                font-size: 15px; 
+                font-weight: normal;
+                letter-spacing: 1px;
+                color: $c-blue;
+                display: inline-block;
+                float: left;
+                &.subtitle {
+                    margin-top: 15px;
+                }
+                &.title {
+                    font-size: 19px;
+                    margin: 10px 0;
+                    font-family: $gotham-bold;
+                }
+            }
+        }
+        .logo_harim {
+            background: transparent url('../images/logo_harim.png') no-repeat 0 -10px;
+            background-size: 170px auto;
+            width: 170px;
+            height: 170px;
+            float: left;
+            text-indent: -99999%;
+            margin-right: 35px;
+            position: relative;
+            z-index: 99;
+        }
+        ul.social {
+            display: table;
+            height: 100%;
+            margin: 47px 0 0 0;
+            padding: 0;
+            li {
+                list-style: none;
+                a {
+                    text-indent: -99999%;
+                    width: 30px;
+                    height: 30px;
+                    float: left;
+                    background: transparent url('../images/sp_social.png') 0 0 no-repeat;
+                    background-size: auto 30px;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    transition: .3s;
+                    &.fb {
+                        background-position: 100% 0;
+                        margin: 0;
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        .btn-cta {
+            @include btn-cta;
+            float: right;
+            margin-top: 32px;
+        }
+    }
+}

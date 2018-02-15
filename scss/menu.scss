@@ -1,0 +1,101 @@
+
+/* /////////////////////*/
+/* ======= MENU ======= */
+
+nav {
+    background-color: $c-blue;
+    height: 60px;
+    font-family: $gotham-medium;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: sticky;
+    color: white;
+    top: 0;
+    z-index: 9;
+    float: left;
+    width: 100%;
+    .menu-mobile{
+        display: none;
+    }
+    ul.menu-desk{
+        position:relative;
+        /*max-width: 1250px;*/
+        padding: 0;
+        li{
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            height: 60px;
+            position: initial;
+            padding: 0;
+            width: 21%;
+            & > a{
+                color: white;
+                text-align: center;
+                display: block;
+                line-height: 60px;
+                font-size: 15px;
+                letter-spacing: 1px;
+                &:hover{
+                    color: white;
+                    text-decoration: none;
+                    background-color: $c-blue-extra;
+                    -webkit-transition: background-color 500ms;
+                    -moz-transition: background-color 500ms;
+                    -o-transition: background-color 500ms;
+                    transition: background-color 500ms;
+                }
+            }
+        }
+        li.first {
+            width: 14%;
+        }
+        .menulv2{
+            position:absolute;
+            width: 100%;
+            top: 60px;
+            left: 0;
+            background-color:$c-blue-extra;
+            height: 50px;
+            display: none;
+            & > li{
+                list-style: none;
+                display: inline-block;
+                width: 14%;
+                margin-left: 0%;
+                a{
+                    color: white;
+                    line-height: 50px;
+                    font-family: $gotham-book;
+                    display: inline-block;
+                    position: relative;
+                    &:hover{
+                        transition: width 100ms ease;
+                    }
+                    &:before{
+                        content: '\00a0';
+                        width: 30px;
+                        height: 40px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        background-image: url('../images/header/sprite-submenu.png');
+                        background-size: 156px;
+                        background-repeat: no-repeat;
+                        margin-right: 5px;
+                    }
+                    
+                    &.percent{
+                        &:before{
+                            content: '%';
+                            background-image: none;
+                            font-size: 24px;
+                            line-height: 40px;
+                            font-family: $gotham-book;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
