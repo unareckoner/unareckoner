@@ -1,73 +1,80 @@
-/* ======= HEADER ======= */
+/* ======= HOME ======= */
 
-header {
-    float: left;
-    width: 100%;
-    .container {
-        max-width: 1250px;
-        background: white;
-        .title_site {
-            a {
-                text-decoration: none;
-                font-family: $gotham-medium;
-                font-size: 15px; 
-                font-weight: normal;
-                letter-spacing: 1px;
-                color: $c-blue;
-                display: inline-block;
-                float: left;
-                &.subtitle {
-                    margin-top: 15px;
-                }
-                &.title {
-                    font-size: 19px;
-                    margin: 10px 0;
-                    font-family: $gotham-bold;
-                }
-            }
+main{
+    overflow:hidden;
+    .parallax{
+        
+        h3{
+            margin:0;
         }
-        .logo_harim {
-            background: transparent url('../images/logo_harim.png') no-repeat 0 -10px;
-            background-size: 170px auto;
-            width: 170px;
-            height: 170px;
-            float: left;
-            text-indent: -99999%;
-            margin-right: 35px;
-            position: relative;
-            z-index: 99;
+    }
+    /*PARALLAX*/
+    @mixin mixin-parallax{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax{
+        position:relative;
+    }
+    .parallax-first {
+        /* The image used */
+        background-image: url("../images/home/slide-home.png");
+        height: 600px;
+        @include mixin-parallax;
+        .slide-home{
+            width: 100%;
         }
-        ul.social {
-            display: table;
-            height: 100%;
-            margin: 47px 0 0 0;
+        .sections {
             padding: 0;
+            height: 600px;
+            max-width: 1500px;
+            margin: 0 auto;
+            display: table;
+            width: 100%;
             li {
                 list-style: none;
+                width: 33.3%;
+                display: inline-block;
+                height: 600px;
+                float: left;
                 a {
-                    text-indent: -99999%;
-                    width: 30px;
-                    height: 30px;
+                    width: 100%;
                     float: left;
-                    background: transparent url('../images/sp_social.png') 0 0 no-repeat;
-                    background-size: auto 30px;
-                    cursor: pointer;
-                    margin-right: 10px;
-                    transition: .3s;
-                    &.fb {
-                        background-position: 100% 0;
-                        margin: 0;
+                    position: relative;
+                    span {
+                        opacity: 0;
+                        transition: .5s;
+                        height: 600px;
+                        width: 100%;
+                        display: table;
+                        z-index: 99;
+                        position: absolute;
+                        span {
+                            vertical-align: middle;
+                            text-trasnform: uppercase;
+                            font-family: $gotham-medium;
+                            letter-spacing: 1px;
+                            color: $c-blue;
+                            cursor: pointer;
+                            text-decoration: none;
+                        }
+                    }
+                    img {
+                        width: 100%;
                     }
                     &:hover {
-                        opacity: 0.7;
+                        span {
+                            opacity: .8;
+                            background: #afc6cc;
+                        }
+                        img {
+                            opacity: 0.8;
+                        }
                     }
                 }
             }
-        }
-        .btn-cta {
-            @include btn-cta;
-            float: right;
-            margin-top: 32px;
         }
     }
 }

@@ -25,13 +25,21 @@
         <main>
             <div class="category">
                 <div class="parallax parallax-first">
-                    <div class="catego catego-insumos">
-                        
-                        <div class="container-fluid slide-content">
-                            <p class="title-01">La combinación<br> perfecta para<br> tu negocio</p>
-                            <p class="title-02">Conozca nuestras<br> marcas y el mejor<br> para tu negocio.</p>
-                            <button class="button-slide"  onclick="location.href='html/categorias.php'">Mira los productos</button>
-                        </div>
+                    <div class="">
+                        <ul class="sections">
+                            <li class="first">
+                                <a class="cirug">
+                                    <span class="hover"><span>Cirugías</span></span>
+                                    <img src="images/banner1.png" alt="Cirujano ortopedico"  width="100%"/>
+                                </a>
+                            </li>
+                            <li class="second">
+                                <a class="rehab"><span>Rehabilitación</span></a>
+                                <a class="hosp"><span>Hospitalización</span></a>
+                            </li>
+                            <li class="third"><a class="sport"><span>Medicina del deporte</span></a></li>
+                        </ul>
+        
                         <!-- <div id="easing" class="lx parallax-coffee skrollable skrollable-between"></div> -->
                         <div class="parallax-bean">
                         </div>
@@ -43,21 +51,12 @@
                     <div class="leaves">
                         <div class="leaves-02" data-parallax='{"y": 100, "from-scroll": 300}'>
                             <h3>¿quiénes somos?</h3>
-                            <span>Nescafé</span>
-                            <p>Soluciones<br>&nbsp;prácticas,<br>&nbsp;&nbsp;&nbsp;ágiles e<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inteligentes<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;para tu <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;negocio.</p>
+                            
                         </div>
                         <div class="ventajas">
                             <h2  data-parallax='{"y": -100, "from-scroll": 100}'>Las ventajas</h2>
-                            <div class="pasos paso1" data-parallax='{"y": -80, "from-scroll": 100}'><span class="step">Elija el mejor<br>modo de pago para ti<br><span>Pague con la tarjeta, factura<br> o depósito, al contado o fraccionada.</span></span></div>
+                            <div class="pasos paso1" data-parallax='{"y": -80, "from-scroll": 100}'>
 
-                            <!--<div class="pasos paso2"><span class="step">Programe el auto-delivery<br><span>Cuente con un sistema de<br>agendamiento customizado.</span></span></div>-->
-
-                            <div class="pasos paso3"  data-parallax='{"y": -60, "from-scroll": 100}'><span class="step">Rastree sus pedidos<br><span>Sepa exactamente cuándo van<br>a llegar y dónde están sus compras.</span></span></div>
-
-                            <div class="pasos paso4"  data-parallax='{"y": -40, "from-scroll": 100}'><span class="step">Es rápido, simple y todo online</span></div>
-                            <button class="button-white" onclick="location.href='html/categorias.php'">Accede a la tienda</button>
-                            <img class="top-photo" src="images/home/top-photo.png"  />
-                            <img class="bottom-photo" src="images/home/bottom-photo.png" data-parallax='{"x": -30}'/>
                         </div>
                     </div>
 
@@ -66,9 +65,7 @@
                 <div class="parallax parallax-third">
                     <div class="content-video">
                         <img class="play" src="images/home/buttonplay.png" />
-                        <!--<div class="getapp">
-                            <span class="download">Descarga gratuitamente<br><span>Nescafé app</span></span>
-                        </div>-->
+                       
 
                     </div>
                 </div>

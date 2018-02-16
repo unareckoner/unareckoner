@@ -1311,7 +1311,7 @@ header {
     header .container ul.social {
       display: table;
       height: 100%;
-      margin: 47px 0 0 0;
+      margin: 47px auto 0 auto;
       padding: 0; }
       header .container ul.social li {
         list-style: none; }
@@ -1351,6 +1351,69 @@ header {
       header .container .btn-cta:hover {
         background: #73a225; }
 
+main {
+  float: left;
+  width: 100%; }
+
+/* ======= HOME ======= */
+main {
+  overflow: hidden;
+  /*PARALLAX*/ }
+  main .parallax h3 {
+    margin: 0; }
+  main .parallax {
+    position: relative; }
+  main .parallax-first {
+    /* The image used */
+    background-image: url("../images/home/slide-home.png");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    main .parallax-first .slide-home {
+      width: 100%; }
+    main .parallax-first .sections {
+      padding: 0;
+      height: 600px;
+      max-width: 1500px;
+      margin: 0 auto;
+      display: table;
+      width: 100%; }
+      main .parallax-first .sections li {
+        list-style: none;
+        width: 33.3%;
+        display: inline-block;
+        height: 600px;
+        float: left; }
+        main .parallax-first .sections li a {
+          width: 100%;
+          float: left;
+          position: relative; }
+          main .parallax-first .sections li a span {
+            opacity: 0;
+            transition: .5s;
+            height: 600px;
+            width: 100%;
+            display: table;
+            z-index: 99;
+            position: absolute; }
+            main .parallax-first .sections li a span span {
+              vertical-align: middle;
+              text-trasnform: uppercase;
+              font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
+              letter-spacing: 1px;
+              color: #3c646e;
+              cursor: pointer;
+              text-decoration: none; }
+          main .parallax-first .sections li a img {
+            width: 100%; }
+          main .parallax-first .sections li a:hover span {
+            opacity: .8;
+            background: #afc6cc; }
+          main .parallax-first .sections li a:hover img {
+            opacity: 0.8; }
+
 /* /////////////////////*/
 /* ======= MENU ======= */
 nav {
@@ -1378,7 +1441,7 @@ nav {
       height: 60px;
       position: initial;
       padding: 0;
-      width: 21%; }
+      width: 20.3%; }
       nav ul.menu-desk li > a {
         color: white;
         text-align: center;
@@ -1404,35 +1467,103 @@ nav {
       background-color: #428393;
       height: 50px;
       display: none; }
-      nav ul.menu-desk .menulv2 > li {
+      nav ul.menu-desk .menulv2 li {
         list-style: none;
         display: inline-block;
         width: 14%;
         margin-left: 0%; }
-        nav ul.menu-desk .menulv2 > li a {
+        nav ul.menu-desk .menulv2 li a {
           color: white;
           line-height: 50px;
           font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
           display: inline-block;
           position: relative; }
-          nav ul.menu-desk .menulv2 > li a:hover {
-            transition: width 100ms ease; }
-          nav ul.menu-desk .menulv2 > li a:before {
+          nav ul.menu-desk .menulv2 li a:hover {
+            transition: width 100ms ease;
+            opacity: 0.7; }
+          nav ul.menu-desk .menulv2 li a:before {
             content: '\00a0';
             width: 30px;
-            height: 40px;
+            height: 30px;
             display: inline-block;
             vertical-align: middle;
-            background-image: url("../images/header/sprite-submenu.png");
-            background-size: 156px;
+            background-image: url("../images/sp_padecimientos_wh.png");
+            background-size: auto 30px;
             background-repeat: no-repeat;
-            margin-right: 5px; }
-          nav ul.menu-desk .menulv2 > li a.percent:before {
+            margin-right: 9px;
+            margin-top: 9px;
+            float: left; }
+          nav ul.menu-desk .menulv2 li a.percent:before {
             content: '%';
             background-image: none;
             font-size: 24px;
             line-height: 40px;
             font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif; }
+        nav ul.menu-desk .menulv2 li a.shoulder:before {
+          background-position: -33px 0; }
+        nav ul.menu-desk .menulv2 li a.foot:before {
+          background-position: -66px 0; }
+        nav ul.menu-desk .menulv2 li a.knee:before {
+          background-position: -100px 0; }
+        nav ul.menu-desk .menulv2 li a.hand:before {
+          background-position: -133px 0; }
+        nav ul.menu-desk .menulv2 li a.others:before {
+          background-image: none; }
+
+footer {
+  background-color: #3c646e;
+  font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
+  font-size: 10px;
+  height: 130px; }
+  footer .container {
+    height: 130px;
+    display: table;
+    max-width: 1200px; }
+    footer .container ul {
+      vertical-align: middle;
+      display: table-cell; }
+      footer .container ul li {
+        display: inline-block;
+        text-align: center;
+        margin-right: 30px; }
+        footer .container ul li a,
+        footer .container ul li p {
+          color: white;
+          text-transform: none;
+          cursor: pointer;
+          font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
+          transition: none;
+          text-decoration: underline;
+          font-size: 13px;
+          margin: 0; }
+        footer .container ul li p {
+          text-decoration: none;
+          cursor: default; }
+        footer .container ul li a:hover, footer .container ul li a:active, footer .container ul li a:focus {
+          text-decoration: underline;
+          color: white;
+          opacity: 0.7; }
+    footer .container .payment {
+      vertical-align: middle;
+      display: table-cell; }
+      footer .container .payment h3 {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
+        margin: 0;
+        color: white;
+        float: right; }
+        footer .container .payment h3 span {
+          border-radius: 10px;
+          background: #9eb2b7;
+          padding: 15px;
+          margin-left: 20px;
+          displaY: inline-block; }
+    @media (max-width: 480px) {
+      footer .container ul li {
+        text-align: left; }
+        footer .container ul li a {
+          line-height: 35px; } }
 
 .top-banner-dash {
   background-color: #e1261c;
@@ -3133,50 +3264,6 @@ main {
     text-indent: -9999px;
     position: absolute;
     right: 0; }
-
-footer {
-  background-color: #e1261c;
-  font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
-  font-size: 10px; }
-  footer .container ul {
-    margin-bottom: 0; }
-    footer .container ul li {
-      display: inline-block;
-      text-align: center; }
-      footer .container ul li a {
-        color: white;
-        text-transform: uppercase;
-        line-height: 90px;
-        cursor: pointer;
-        font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
-        transition: none;
-        text-decoration: none;
-        font-size: 13px; }
-        footer .container ul li a:hover, footer .container ul li a:active, footer .container ul li a:focus {
-          text-decoration: none;
-          color: white; }
-      footer .container ul li.phone a {
-        font-size: 18px; }
-      footer .container ul li.phone:before {
-        content: "\00a0";
-        background-image: url("../images/sprite.png");
-        background-repeat: no-repeat;
-        background-position: -49px -152px;
-        background-size: 120px;
-        width: 31px;
-        height: 29px;
-        display: inline-block;
-        line-height: 35px; }
-  @media (max-width: 480px) {
-    footer .container ul li {
-      text-align: left; }
-      footer .container ul li a {
-        line-height: 35px; } }
-  @media (max-width: 950px) {
-    footer .container ul li {
-      text-align: left; }
-      footer .container ul li a {
-        line-height: 35px; } }
 
 .login-view {
   font-family: "Gotham-Bold", "Trebuchet MS", Arial, sans-serif;
