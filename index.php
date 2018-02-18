@@ -30,14 +30,25 @@
                             <li class="first">
                                 <a class="cirug">
                                     <span class="hover"><span>Cirugías</span></span>
-                                    <img src="images/banner1.png" alt="Cirujano ortopedico"  width="100%"/>
+                                    <img src="images/banner1.png" alt="Cirugías">
                                 </a>
                             </li>
                             <li class="second">
-                                <a class="rehab"><span>Rehabilitación</span></a>
-                                <a class="hosp"><span>Hospitalización</span></a>
+                                <a class="rehab">
+                                    <span class="hover"><span>Rehabilitacion</span></span>
+                                    <img src="images/banner2.png" alt="Cirugías">
+                                </a>
+                                <a class="hosp">
+                                    <span class="hover"><span>Hospitalización</span></span>
+                                    <img src="images/banner3.png" alt="Cirugías">
+                                </a>
                             </li>
-                            <li class="third"><a class="sport"><span>Medicina del deporte</span></a></li>
+                            <li class="third">
+                                <a class="sport">
+                                    <span class="hover"><span>Medicina del deporte</span></span>
+                                    <img src="images/banner4.png" alt="Medicina del deporte">
+                                </a>
+                            </li>
                         </ul>
         
                         <!-- <div id="easing" class="lx parallax-coffee skrollable skrollable-between"></div> -->
@@ -48,25 +59,37 @@
                 </div>
 
                 <div class="parallax parallax-second">
-                    <div class="leaves">
-                        <div class="leaves-02" data-parallax='{"y": 100, "from-scroll": 300}'>
-                            <h3>¿quiénes somos?</h3>
-                            
-                        </div>
-                        <div class="ventajas">
+                    <div class="benefits">
+                        <ul class="list_ico" data-parallax='{"y": 100, "from-scroll": 300}'>
+                            <li class="valoracion">
+                                <span class="img"><img src="images/ico_valoracion.png" alt="Valoración en Lesiones Esquéleticas"></span>
+                                <span class="txt">Valoración</span>
+                            </li>
+                            <li class="diagnostico">
+                                <span class="img"><img src="images/ico_diagnostico.png" alt="Diagnóstico Oportuno"></span>
+                                <span class="txt">Diagnóstico</span>
+                            </li>
+                            <li class="diagnostico">
+                                <span class="img"><img src="images/ico_convenio.png" alt="Convenio con aseguradoras"></span>
+                                <span class="txt">Convenio con <br>aseguradoras</span>
+                            </li>  
+                        </ul>
+                        <!--<div class="beneficios">
                             <h2  data-parallax='{"y": -100, "from-scroll": 100}'>Las ventajas</h2>
                             <div class="pasos paso1" data-parallax='{"y": -80, "from-scroll": 100}'>
 
-                        </div>
+                        </div>-->
                     </div>
-
+                    <!--<img class="fig" src="images/fig_ban5.png" />-->
                 </div>
                 
                 <div class="parallax parallax-third">
-                    <div class="content-video">
-                        <img class="play" src="images/home/buttonplay.png" />
-                       
-
+                    <div class="content-banner">
+                        <h2>
+                            <span class="comillas">"</span> 
+                            El buen médico trata la enfermedad; <br>el gran médico trata <br>al paciente que tiene <br>la enfermedad."
+                            <strong>William Osler</strong>
+                        </h2>
                     </div>
                 </div>
                 <div class="parallax parallax-four">

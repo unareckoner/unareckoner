@@ -749,7 +749,7 @@ input:focus, button:focus {
   .detail_solution .form input,
   .detail_solution .form select,
   .detail_solution .form textarea {
-    background: #f4f3f3;
+    background: #9fb6bb;
     border-radius: 5px;
     border: none;
     color: #494949;
@@ -797,7 +797,7 @@ input:focus, button:focus {
     -moz-appearance: none;
     appearance: none;
     overflow: hidden;
-    background: #f4f3f3 url("../images/bkg-select.png") 97% 7px no-repeat;
+    background: #9fb6bb url("../images/bkg-select.png") 97% 7px no-repeat;
     background-size: 36px 36px;
     position: relative;
     cursor: pointer; }
@@ -1208,7 +1208,7 @@ input:focus, button:focus {
   .success .bkg-gray,
   .fast_register .bkg-gray,
   .detail_solution .bkg-gray {
-    background: #f4f3f3; }
+    background: #9fb6bb; }
   .dashboard button.accordion,
   .contacto button.accordion,
   .cms button.accordion,
@@ -1361,6 +1361,8 @@ main {
   /*PARALLAX*/ }
   main .parallax h3 {
     margin: 0; }
+  main .category {
+    background: #3c646e; }
   main .parallax {
     position: relative; }
   main .parallax-first {
@@ -1382,37 +1384,133 @@ main {
       width: 100%; }
       main .parallax-first .sections li {
         list-style: none;
-        width: 33.3%;
+        width: 30%;
         display: inline-block;
         height: 600px;
         float: left; }
+        main .parallax-first .sections li.second {
+          width: 40%; }
         main .parallax-first .sections li a {
           width: 100%;
+          height: 100%;
           float: left;
-          position: relative; }
+          position: relative;
+          cursor: pointer; }
           main .parallax-first .sections li a span {
             opacity: 0;
             transition: .5s;
-            height: 600px;
+            height: 100%;
             width: 100%;
             display: table;
-            z-index: 99;
+            z-index: 8;
             position: absolute; }
             main .parallax-first .sections li a span span {
               vertical-align: middle;
-              text-trasnform: uppercase;
+              display: table-cell;
+              text-transform: uppercase;
               font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
               letter-spacing: 1px;
-              color: #3c646e;
+              color: #1b1b1b;
               cursor: pointer;
-              text-decoration: none; }
+              text-decoration: none;
+              font-size: 22px;
+              width: 100%;
+              text-align: center;
+              top: 45%;
+              background: none;
+              height: auto; }
           main .parallax-first .sections li a img {
             width: 100%; }
           main .parallax-first .sections li a:hover span {
             opacity: .8;
-            background: #afc6cc; }
+            background: #cae7ef; }
           main .parallax-first .sections li a:hover img {
-            opacity: 0.8; }
+            opacity: 0.9; }
+        main .parallax-first .sections li a.rehab,
+        main .parallax-first .sections li a.hosp {
+          height: 50%; }
+  main .parallax-second {
+    background-color: #9fb6bb;
+    position: relative;
+    height: 250px;
+    clear: both; }
+    main .parallax-second .benefits {
+      max-width: 1110px;
+      margin: 0 auto;
+      display: table;
+      width: 100%;
+      height: 100%; }
+      main .parallax-second .benefits .list_ico {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        /*display: table-cell;*/
+        vertical-align: middle; }
+        main .parallax-second .benefits .list_ico li {
+          list-style: none;
+          width: 33.1%;
+          font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
+          color: white;
+          text-transform: uppercase;
+          font-size: 16px;
+          text-align: center;
+          display: inline-block;
+          letter-spacing: 2px; }
+          main .parallax-second .benefits .list_ico li span {
+            margin: 0 auto;
+            display: table; }
+            main .parallax-second .benefits .list_ico li span img {
+              width: 150px;
+              height: auto;
+              margin-bottom: 20px; }
+    main .parallax-second .fig {
+      position: absolute;
+      bottom: -87px;
+      left: 0;
+      width: 540px;
+      z-index: 9; }
+  main .parallax-third {
+    /* The image used */
+    background-image: url("../images/banner5.jpg");
+    height: 600px;
+    float: left;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    main .parallax-third .content-banner {
+      max-width: 1110px;
+      margin: 0 auto; }
+      main .parallax-third .content-banner h2 {
+        width: 40%;
+        color: white;
+        font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
+        text-transform: none;
+        font-size: 30px;
+        line-height: 50px;
+        letter-spacing: 3px;
+        text-align: center;
+        text-indent: 20px;
+        text-shadow: 2px 3px 3px rgba(21, 21, 21, 0.8);
+        position: relative;
+        margin-top: 150px; }
+        main .parallax-third .content-banner h2 .comillas {
+          background: url("../images/comillas.png") 0 -10px no-repeat;
+          background-size: 60px;
+          width: 60px;
+          height: 40px;
+          text-indent: -9999%;
+          font-size: 0;
+          display: inline-block;
+          position: relative;
+          top: -10px; }
+        main .parallax-third .content-banner h2 strong {
+          font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
+          width: 100%;
+          font-weight: normal;
+          float: left; }
 
 /* /////////////////////*/
 /* ======= MENU ======= */
@@ -1430,6 +1528,8 @@ nav {
   width: 100%; }
   nav .menu-mobile {
     display: none; }
+  nav .cont_menu {
+    max-width: 1200px; }
   nav ul.menu-desk {
     position: relative;
     /*max-width: 1250px;*/
@@ -1649,7 +1749,7 @@ footer {
     .main-dash .col-left-dash a:hover {
       color: #e1261c; }
     .main-dash .col-left-dash .menu-dash {
-      background: #f4f3f3;
+      background: #9fb6bb;
       border-radius: 5px;
       margin: 35px 0 0 0;
       padding: 10px 20px 20px; }
@@ -1724,7 +1824,7 @@ footer {
       width: 100%;
       border-collapse: collapse;
       margin-top: 12px;
-      border-bottom: 3px solid #f4f3f3; }
+      border-bottom: 3px solid #9fb6bb; }
       .main-dash .col-right-dash .dash-table thead {
         color: white;
         font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif; }
@@ -1807,7 +1907,7 @@ footer {
     .main-dash .newsletter .threecol .news-img {
       width: 100%;
       height: auto;
-      background: #f4f3f3;
+      background: #9fb6bb;
       border: 2px solid transparent; }
       .main-dash .newsletter .threecol .news-img img {
         width: 100%;
@@ -2048,7 +2148,7 @@ footer {
       padding-right: 0; }
   .main-dash.cart .resume {
     color: #676767;
-    background: #f4f3f3;
+    background: #9fb6bb;
     border-radius: 5px;
     padding: 30px;
     float: left;
@@ -2729,7 +2829,7 @@ header {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: #f4f3f3;
+    background-color: #9fb6bb;
     border: none;
     border-radius: 5px;
     height: 20px;
@@ -2762,7 +2862,7 @@ header {
         width: 29px;
         height: 30px;
         top: 0px;
-        background-color: #f4f3f3;
+        background-color: #9fb6bb;
         border-radius: 0 5px 5px 0; } }
   @media (max-width: 767px) {
     header ul.account-links li.nav-search input {
@@ -2908,205 +3008,7 @@ nav .menu-fixed {
       transform: translate3d(0, -10px, 0) rotate(90deg); } }
 
 main {
-  overflow: hidden;
   /*PARALLAX*/ }
-  main .parallax h3 {
-    margin: 0; }
-  main .parallax {
-    position: relative; }
-  main .parallax-first {
-    /* The image used */
-    background-image: url("../images/home/slide-home.png");
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    main .parallax-first .slide-home {
-      width: 100%; }
-    main .parallax-first .slide-content {
-      position: absolute;
-      z-index: 2;
-      top: 60px;
-      text-align: right;
-      right: 0; }
-      main .parallax-first .slide-content .button-slide {
-        margin-right: 100px; }
-        main .parallax-first .slide-content .button-slide a {
-          color: #da0413; }
-      main .parallax-first .slide-content .title-01 {
-        font-size: 43px;
-        font-family: "Gotham-Bold", "Trebuchet MS", Arial, sans-serif;
-        text-transform: uppercase;
-        color: white;
-        margin-right: 100px; }
-      main .parallax-first .slide-content .title-02 {
-        font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
-        color: white;
-        font-size: 20px;
-        margin-right: 100px; }
-  main .parallax-second {
-    background-color: #e1261c;
-    background-image: url("../images/home/texture.png");
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-position: -250px -65px;
-    position: relative;
-    height: 865px;
-    clear: both; }
-    main .parallax-second .leaves {
-      background-image: url("../images/home/leaves.png");
-      background-repeat: no-repeat;
-      background-position: -150px 105px;
-      height: 988px;
-      position: relative;
-      z-index: 1; }
-      main .parallax-second .leaves .leaves-02 h3 {
-        font-size: 43px;
-        font-family: "Gotham-Bold", "Trebuchet MS", Arial, sans-serif;
-        text-transform: uppercase;
-        color: white;
-        font-size: 34px;
-        position: absolute;
-        top: 270px;
-        width: 250px;
-        text-align: center;
-        left: 90px;
-        letter-spacing: 9px; }
-      main .parallax-second .leaves .leaves-02 span {
-        background-image: url("../images/home/logo-nescafe-bco.png");
-        text-indent: -999999px;
-        width: 183px;
-        height: 54px;
-        display: block;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 385px;
-        width: 250px;
-        text-align: center;
-        left: 110px; }
-      main .parallax-second .leaves .leaves-02 p {
-        font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
-        color: white;
-        font-size: 25px;
-        position: absolute;
-        top: 465px;
-        width: 250px;
-        text-align: center;
-        left: 75px;
-        line-height: 34px;
-        letter-spacing: 3px; }
-      main .parallax-second .leaves .ventajas {
-        width: 65%;
-        float: right; }
-        main .parallax-second .leaves .ventajas h2 {
-          font-size: 43px;
-          font-family: "Gotham-Bold", "Trebuchet MS", Arial, sans-serif;
-          text-transform: uppercase;
-          color: white;
-          margin-top: 110px;
-          text-indent: -100px; }
-        main .parallax-second .leaves .ventajas div {
-          margin: 30px 0; }
-          main .parallax-second .leaves .ventajas div .step {
-            font-size: 20px;
-            font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
-            text-transform: uppercase;
-            color: white;
-            vertical-align: bottom; }
-          main .parallax-second .leaves .ventajas div span {
-            font-size: 15px;
-            font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
-            text-transform: uppercase;
-            color: white;
-            display: inline-block; }
-          main .parallax-second .leaves .ventajas div:before {
-            content: "\00a0";
-            width: 101px;
-            height: 101px;
-            display: inline-block;
-            background-repeat: no-repeat;
-            margin-right: 20px; }
-          main .parallax-second .leaves .ventajas div.paso1 {
-            position: relative;
-            left: 0px; }
-            main .parallax-second .leaves .ventajas div.paso1:before {
-              background-image: url("../images/home/paso1.png"); }
-          main .parallax-second .leaves .ventajas div.paso2 {
-            position: relative;
-            left: 100px; }
-            main .parallax-second .leaves .ventajas div.paso2:before {
-              background-image: url("../images/home/paso2.png"); }
-          main .parallax-second .leaves .ventajas div.paso3 {
-            position: relative;
-            left: 40px; }
-            main .parallax-second .leaves .ventajas div.paso3:before {
-              background-image: url("../images/home/paso3.png"); }
-          main .parallax-second .leaves .ventajas div.paso4 {
-            position: relative;
-            left: 135px; }
-            main .parallax-second .leaves .ventajas div.paso4:before {
-              background-image: url("../images/home/paso4.png");
-              vertical-align: middle; }
-            main .parallax-second .leaves .ventajas div.paso4 .step {
-              vertical-align: baseline !Important; }
-        main .parallax-second .leaves .ventajas .button-white {
-          display: block;
-          position: relative;
-          left: 150px; }
-        main .parallax-second .leaves .ventajas .top-photo {
-          position: absolute;
-          top: -30px;
-          right: -10px;
-          width: 360px; }
-        main .parallax-second .leaves .ventajas .bottom-photo {
-          position: absolute;
-          bottom: -30px;
-          right: -130px;
-          width: 360px; }
-  main .parallax-third {
-    /* The image used */
-    background-image: url("../images/home/video1.png");
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    main .parallax-third .content-video .play {
-      position: absolute;
-      z-index: 1;
-      margin-left: 35%;
-      width: 25%;
-      top: 20%;
-      opacity: 0.8;
-      cursor: pointer;
-      display: none; }
-      main .parallax-third .content-video .play:hover {
-        opacity: 1; }
-    main .parallax-third .content-video .getapp {
-      position: absolute;
-      bottom: 0px;
-      right: 30px;
-      background-color: #aa1616;
-      border-radius: 5px 5px 0 0;
-      padding: 22px 45px; }
-      main .parallax-third .content-video .getapp .download {
-        font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
-        font-size: 17px;
-        text-transform: uppercase;
-        color: white;
-        display: inline-block;
-        vertical-align: top; }
-        main .parallax-third .content-video .getapp .download span {
-          font-size: 35px; }
-      main .parallax-third .content-video .getapp:after {
-        content: "\00a0";
-        background-image: url("../images/home/mini-phone.png");
-        width: 35px;
-        height: 64px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 24px; }
   main .parallax-four {
     /* The image used */
     margin-top: 30px;
@@ -3324,7 +3226,7 @@ main {
     .login-view .first label {
       color: #aa1616; }
     .login-view .first input {
-      background-color: #f4f3f3;
+      background-color: #9fb6bb;
       color: black; }
     .login-view .first .btn_small {
       background-color: transparent;

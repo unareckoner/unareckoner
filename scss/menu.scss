@@ -17,7 +17,10 @@ nav {
     .menu-mobile{
         display: none;
     }
-    ul.menu-desk{
+    .cont_menu {
+        max-width: 1200px;
+    }
+    ul.menu-desk {
         position:relative;
         /*max-width: 1250px;*/
         padding: 0;

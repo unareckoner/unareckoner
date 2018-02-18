@@ -8,6 +8,9 @@ main{
             margin:0;
         }
     }
+    .category {
+        background: $c-blue;
+    }
     /*PARALLAX*/
     @mixin mixin-parallax{
         background-attachment: fixed;
@@ -35,30 +38,42 @@ main{
             width: 100%;
             li {
                 list-style: none;
-                width: 33.3%;
+                width: 30%;
                 display: inline-block;
                 height: 600px;
                 float: left;
+                &.second {
+                    width: 40%
+                }
                 a {
                     width: 100%;
+                    height: 100%;
                     float: left;
                     position: relative;
+                    cursor: pointer;
                     span {
                         opacity: 0;
                         transition: .5s;
-                        height: 600px;
+                        height: 100%;
                         width: 100%;
                         display: table;
-                        z-index: 99;
+                        z-index: 8;
                         position: absolute;
                         span {
                             vertical-align: middle;
-                            text-trasnform: uppercase;
+                            display: table-cell;
+                            text-transform: uppercase;
                             font-family: $gotham-medium;
                             letter-spacing: 1px;
-                            color: $c-blue;
+                            color: $c-black;
                             cursor: pointer;
                             text-decoration: none;
+                            font-size: 22px;
+                            width: 100%;
+                            text-align: center;
+                            top: 45%;
+                            background: none;
+                            height: auto;
                         }
                     }
                     img {
@@ -67,14 +82,112 @@ main{
                     &:hover {
                         span {
                             opacity: .8;
-                            background: #afc6cc;
+                            background: #cae7ef;
                         }
                         img {
-                            opacity: 0.8;
+                            opacity: 0.9;
+                        }
+                    }
+                }
+                a.rehab,
+                a.hosp {
+                    height: 50%;
+                }
+            }
+        }
+    }
+    .parallax-second{
+        background-color: $c-gray;
+        position: relative;
+        height: 250px;
+        clear:both;
+        .benefits {
+            max-width: 1110px;
+            margin: 0 auto;
+            display: table;
+            width: 100%;
+            height: 100%;
+            .list_ico {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                height: auto;
+                /*display: table-cell;*/
+                vertical-align: middle;
+                li {
+                    list-style: none;
+                    width: 33.1%;
+                    font-family: $gotham-medium;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    text-align: center;
+                    display: inline-block;
+                    letter-spacing: 2px;
+                    span {
+                        margin: 0 auto;
+                        display: table;
+                        img {
+                            width: 150px;
+                            height: auto;
+                            margin-bottom: 20px;
                         }
                     }
                 }
             }
         }
+        .fig {
+            position: absolute;
+            bottom: -87px;
+            left: 0;
+            width: 540px;
+            z-index: 9;
+        }
+    }
+    .parallax-third {
+        /* The image used */
+        background-image: url("../images/banner5.jpg");
+        height:600px;
+        float: left;
+        width: 100%;
+
+        @include mixin-parallax;
+        
+        .content-banner {
+            max-width: 1110px;
+            margin: 0 auto;
+            h2 {
+                width: 40%;
+                color: white;
+                font-family: $gotham-book;
+                text-transform: none;
+                font-size: 30px;
+                line-height: 50px;
+                letter-spacing: 3px;
+                text-align: center;
+                text-indent: 20px;
+                text-shadow: 2px 3px 3px rgba(21, 21, 21, .8);
+                position: relative;
+                margin-top: 150px;
+                .comillas {
+                    background: url('../images/comillas.png') 0 -10px no-repeat;
+                    background-size: 60px;
+                    width: 60px;
+                    height: 40px;
+                    text-indent: -9999%;
+                    font-size: 0;
+                    display: inline-block;
+                    position: relative;
+                    top: -10px;
+                }
+                strong {
+                    font-family: $gotham-medium;
+                    width: 100%;
+                    font-weight: normal;
+                    float: left;
+                }
+            }
+        }
+        
     }
 }
