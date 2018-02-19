@@ -93,9 +93,37 @@
                     </div>
                 </div>
                 <div class="parallax parallax-four">
-                    <h3 class="title-red">Nuestros más vendidos</h3>
-                    <div class="col-md-1"></div>
-                    
+                    <div class="content">
+                        <h2 class="blue">Atención especializada, integral, dirigida y humana</h2>
+                        <div class="col-set2">
+                            <div class="col-1">
+                                <h2 class="black">Dr. Harim Arias Gutiérrez</h2>
+                                <p>Certificado por el <strong>Consejo Mexicano de Ortopedia y Traumatología</strong>. Es titular del <strong>Colegio Mexicano de Ortopedia</strong> y miembro de <strong>AOTrauma Latinoamerica</strong>. Cuenta además con posgrado en <strong>Artroscopia y Cirugía de Rodilla</strong>, así como la <strong>Especialidad Médica en Traumatología y Ortopedia</strong>. <a>Leer más</a></p>
+                            </div>
+                            <div class="col-2">
+                                <div class="cedula">
+                                    <h3>Cédula profesional</h3>
+                                    <h4>6382946</h4>
+                                    <h3>Cédula especialista</h3>
+                                    <h4>8536436</h4>
+                                </div>
+                                <a class="btn-cta">Agenda tu consulta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parallax parallax-five">
+                    <div class="banner">
+                        <div class="center">
+                            <div class="cont_txt">
+                                <h2>Urgencias</h2>
+                                <h3>Atención <br> 
+                                    <span>24</span> hrs<small>*</small><br>
+                                    <a class="phone" href="tel:0445522123752">04455 2212 3752</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

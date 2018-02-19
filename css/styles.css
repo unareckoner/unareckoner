@@ -1349,7 +1349,8 @@ header {
       float: right;
       margin-top: 32px; }
       header .container .btn-cta:hover {
-        background: #73a225; }
+        background: #73a225;
+        text-decoration: none; }
 
 main {
   float: left;
@@ -1364,7 +1365,9 @@ main {
   main .category {
     background: #3c646e; }
   main .parallax {
-    position: relative; }
+    position: relative;
+    display: inline-table;
+    width: 100%; }
   main .parallax-first {
     /* The image used */
     background-image: url("../images/home/slide-home.png");
@@ -1449,7 +1452,7 @@ main {
         vertical-align: middle; }
         main .parallax-second .benefits .list_ico li {
           list-style: none;
-          width: 33.1%;
+          width: 33%;
           font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
           color: white;
           text-transform: uppercase;
@@ -1474,8 +1477,6 @@ main {
     /* The image used */
     background-image: url("../images/banner5.jpg");
     height: 600px;
-    float: left;
-    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1511,6 +1512,142 @@ main {
           width: 100%;
           font-weight: normal;
           float: left; }
+  main .parallax-four {
+    /* The image used */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #cae7ef; }
+    main .parallax-four .content {
+      max-width: 1110px;
+      margin: 0 auto;
+      display: table; }
+    main .parallax-four h2 {
+      color: #3c646e;
+      text-transform: uppercase;
+      font-size: 24px;
+      letter-spacing: 6.9px;
+      margin: 80px 0;
+      font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif; }
+    main .parallax-four h2.black {
+      color: black;
+      font-size: 22px;
+      font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
+      margin: 0 0 55px 0; }
+    main .parallax-four .col-set2 .col-1 {
+      width: 55%;
+      float: left; }
+    main .parallax-four .col-set2 .col-2 {
+      width: 35%;
+      float: right; }
+    main .parallax-four p {
+      color: #313131;
+      line-height: 2em;
+      font-size: 20px;
+      font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
+      letter-spacing: 1px;
+      margin-bottom: 80px; }
+      main .parallax-four p strong {
+        font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif; }
+      main .parallax-four p a {
+        color: #3c646e;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 15px; }
+    main .parallax-four .cedula {
+      border-radius: 10px;
+      background: #9fb6bb;
+      padding: 35px; }
+      main .parallax-four .cedula h3,
+      main .parallax-four .cedula h4 {
+        font-size: 20px;
+        color: #3c646e;
+        font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
+        letter-spacing: 3px;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        text-align: center; }
+      main .parallax-four .cedula h4 {
+        color: white;
+        margin: 0 0 30px 0; }
+        main .parallax-four .cedula h4:last-child {
+          margin-bottom: 0; }
+    main .parallax-four .btn-cta {
+      background: #94bb53;
+      color: white;
+      font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      line-height: 45px;
+      border-radius: 5px;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      height: 45px;
+      padding: 0 25px;
+      transition: .5s;
+      float: right;
+      margin-top: 50px;
+      width: 100%;
+      text-align: center;
+      cursor: pointer; }
+      main .parallax-four .btn-cta:hover {
+        background: #73a225;
+        text-decoration: none; }
+  main .parallax-five .banner {
+    width: 100%;
+    max-width: 1500px;
+    background: url("../images/banner6.jpg") 0 0 no-repeat;
+    background-size: cover;
+    height: 355px; }
+    main .parallax-five .banner img {
+      width: 100%;
+      height: auto; }
+  main .parallax-five .center {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    main .parallax-five .center .cont_txt {
+      float: right;
+      width: 30%;
+      margin-top: 50px; }
+    main .parallax-five .center h2,
+    main .parallax-five .center h3 {
+      font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
+      font-size: 40px;
+      color: white;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      text-shadow: 2px 3px 3px rgba(21, 21, 21, 0.8);
+      text-align: center; }
+    main .parallax-five .center h3 {
+      font-size: 22px;
+      letter-spacing: 2px; }
+      main .parallax-five .center h3 span {
+        font-size: 50px;
+        line-height: 22px;
+        margin-top: 20px;
+        display: inline-block; }
+    main .parallax-five .center a.phone {
+      color: #94bb53;
+      background: url("../images/ico_phone.png") 0 0 no-repeat;
+      background-size: 50px auto;
+      padding-left: 50px;
+      height: 50px;
+      line-height: 50px;
+      display: inline-block; }
+      main .parallax-five .center a.phone:hover {
+        text-decoration: none; }
+    main .parallax-five .center small {
+      color: white;
+      line-height: 22px;
+      font-size: 18px; }
 
 /* /////////////////////*/
 /* ======= MENU ======= */
@@ -1566,7 +1703,8 @@ nav {
       left: 0;
       background-color: #428393;
       height: 50px;
-      display: none; }
+      display: none;
+      z-index: 99; }
       nav ul.menu-desk .menulv2 li {
         list-style: none;
         display: inline-block;
@@ -3009,130 +3147,6 @@ nav .menu-fixed {
 
 main {
   /*PARALLAX*/ }
-  main .parallax-four {
-    /* The image used */
-    margin-top: 30px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    main .parallax-four .title-red {
-      font-size: 43px;
-      font-family: "Gotham-Bold", "Trebuchet MS", Arial, sans-serif;
-      text-transform: uppercase;
-      color: #aa1616;
-      text-indent: 50px; }
-      main .parallax-four .title-red:before {
-        content: "\00a0";
-        background-image: url("../images/home/feather.png");
-        background-repeat: no-repeat;
-        background-position: 0px -72px;
-        background-size: 81px;
-        width: 81px;
-        height: 88px;
-        display: inline-block;
-        line-height: 35px;
-        margin-right: 50px; }
-    main .parallax-four .product-grid-home {
-      margin-bottom: 50px; }
-      main .parallax-four .product-grid-home .prod-grid-home {
-        background-color: #f0efef;
-        height: 200px;
-        width: 100%;
-        text-align: center;
-        border-radius: 5px;
-        width: 16%;
-        margin-right: 4%;
-        float: left;
-        margin-bottom: 20px;
-        position: relative; }
-        main .parallax-four .product-grid-home .prod-grid-home:before {
-          content: "\00a0";
-          display: inline-block;
-          height: 100%;
-          vertical-align: middle;
-          font-size: 0; }
-        main .parallax-four .product-grid-home .prod-grid-home img {
-          display: inline-block;
-          vertical-align: middle;
-          max-width: 75%;
-          max-height: 155px; }
-        main .parallax-four .product-grid-home .prod-grid-home .info {
-          display: none;
-          position: absolute;
-          background: rgba(0, 0, 0, 0.8);
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          border-radius: 5px;
-          text-align: left;
-          text-transform: uppercase;
-          font-style: normal;
-          padding: 10px;
-          color: #fff; }
-          main .parallax-four .product-grid-home .prod-grid-home .info .ranking {
-            background: url("../images/sprite.png") -25px -635px no-repeat;
-            width: 100px;
-            height: 20px;
-            margin-bottom: 5px;
-            margin-top: 10px; }
-          main .parallax-four .product-grid-home .prod-grid-home .info .precio {
-            font-size: 20px; }
-            main .parallax-four .product-grid-home .prod-grid-home .info .precio i {
-              font-style: normal;
-              font-size: 12px; }
-          main .parallax-four .product-grid-home .prod-grid-home .info .boton1 {
-            font-size: 10px;
-            line-height: 30px;
-            width: 100%;
-            height: 30px;
-            margin: 10px 5px 10px 0;
-            cursor: pointer;
-            text-align: center;
-            border-radius: 2px;
-            padding: 0 5px 3px 30px;
-            background: #ff2116;
-            color: #fff;
-            display: inline-block;
-            position: relative;
-            text-transform: uppercase;
-            font-style: normal; }
-            main .parallax-four .product-grid-home .prod-grid-home .info .boton1:before {
-              content: "";
-              width: 28px;
-              height: 22px;
-              position: absolute;
-              background: url("../images/sprite.png") -30px -29px no-repeat;
-              background-size: 95px;
-              left: 0; }
-          main .parallax-four .product-grid-home .prod-grid-home .info .boton2 {
-            font-size: 8px;
-            line-height: 1;
-            width: 70px;
-            margin: 10px 0 10px 2px;
-            cursor: pointer;
-            text-align: left;
-            border-radius: 2px;
-            padding: 3px 5px 3px 30px;
-            background: #ff2116;
-            color: #fff;
-            display: inline-block;
-            position: relative;
-            text-transform: uppercase;
-            font-style: normal; }
-            main .parallax-four .product-grid-home .prod-grid-home .info .boton2:before {
-              content: "";
-              width: 28px;
-              height: 18px;
-              position: absolute;
-              background: url("../images/sprite.png") -32px -148px no-repeat;
-              background-size: 95px;
-              left: 0; }
-          main .parallax-four .product-grid-home .prod-grid-home .info span {
-            display: block; }
-        main .parallax-four .product-grid-home .prod-grid-home:hover .info {
-          display: block; }
   main .slides {
     position: relative; }
 

@@ -61,6 +61,7 @@ nav {
             background-color:$c-blue-extra;
             height: 50px;
             display: none;
+            z-index: 99;
             li{
                 list-style: none;
                 display: inline-block;
