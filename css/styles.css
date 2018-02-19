@@ -1367,7 +1367,8 @@ main {
   main .parallax {
     position: relative;
     display: inline-table;
-    width: 100%; }
+    width: 100%;
+    float: left; }
   main .parallax-first {
     /* The image used */
     background-image: url("../images/home/slide-home.png");
@@ -1402,7 +1403,7 @@ main {
           main .parallax-first .sections li a span {
             opacity: 0;
             transition: .5s;
-            height: 100%;
+            height: 605px;
             width: 100%;
             display: table;
             z-index: 8;
@@ -1431,7 +1432,13 @@ main {
             opacity: 0.9; }
         main .parallax-first .sections li a.rehab,
         main .parallax-first .sections li a.hosp {
-          height: 50%; }
+          height: 302.5px; }
+          main .parallax-first .sections li a.rehab span,
+          main .parallax-first .sections li a.hosp span {
+            height: 302.5px; }
+            main .parallax-first .sections li a.rehab span span,
+            main .parallax-first .sections li a.hosp span span {
+              background: none; }
   main .parallax-second {
     background-color: #9fb6bb;
     position: relative;
@@ -1648,6 +1655,40 @@ main {
       color: white;
       line-height: 22px;
       font-size: 18px; }
+  main .parallax-six {
+    background: #eff8fa;
+    padding: 40px 0; }
+    main .parallax-six .content {
+      max-width: 1110px;
+      margin: 0 auto;
+      display: table;
+      width: 100%; }
+    main .parallax-six img,
+    main .parallax-six .map {
+      margin: 0 auto;
+      display: table; }
+    main .parallax-six .map {
+      margin: 20px auto; }
+    main .parallax-six .location,
+    main .parallax-six p {
+      color: #313131;
+      font-size: 15px;
+      text-transform: none;
+      font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
+      margin: 0;
+      letter-spacing: 1px;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto; }
+      main .parallax-six .location span,
+      main .parallax-six p span {
+        font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif; }
+    main .parallax-six .col-set2 .col-1 {
+      width: 50%;
+      float: left; }
+    main .parallax-six .col-set2 .col-2 {
+      width: 50%;
+      float: right; }
 
 /* /////////////////////*/
 /* ======= MENU ======= */
@@ -1747,6 +1788,56 @@ nav {
           background-position: -133px 0; }
         nav ul.menu-desk .menulv2 li a.others:before {
           background-image: none; }
+  @media (max-width: 767px) {
+    nav {
+      height: 45px;
+      width: 105px;
+      border-radius: 5px;
+      margin-left: 10px; }
+      nav .menu-desk {
+        display: none; }
+      nav .hamburger {
+        min-height: 30px;
+        max-width: 50px;
+        position: absolute;
+        top: 11px;
+        left: 30px; }
+        nav .hamburger .menu-mobile {
+          display: none;
+          height: 150px; }
+          nav .hamburger .menu-mobile li {
+            display: inline-block;
+            width: 200px;
+            background-color: #428393;
+            list-style: none;
+            position: relative;
+            top: 33px;
+            left: -70px;
+            height: 34px;
+            line-height: 15px;
+            padding: 10px; }
+            nav .hamburger .menu-mobile li a {
+              color: white; }
+      nav .hamburger-inner, nav .hamburger-inner:after, nav .hamburger-inner:before {
+        background-color: white;
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        border-radius: 5px;
+        content: '\00a0';
+        transition-timing-function: ease;
+        transition-duration: .2s;
+        transition-property: transform,opacity; }
+      nav .hamburger-inner:before {
+        top: 10px; }
+      nav .hamburger-inner:after {
+        top: 20px; }
+      nav .hamburger.open .hamburger-inner {
+        transform: translate3d(0, 10px, 0) rotate(45deg); }
+      nav .hamburger.open .hamburger-inner:after {
+        transform: translate3d(0, -20px, 0) rotate(-90deg); }
+      nav .hamburger.open .hamburger-inner:before {
+        transform: translate3d(0, -10px, 0) rotate(90deg); } }
 
 footer {
   background-color: #3c646e;
@@ -3094,56 +3185,6 @@ nav .menu-fixed {
       vertical-align: middle;
       height: 100%;
       font-size: 0; }
-@media (max-width: 767px) {
-  nav {
-    height: 45px;
-    width: 105px;
-    border-radius: 5px;
-    margin-left: 10px; }
-    nav .menu-desk {
-      display: none; }
-    nav .hamburger {
-      min-height: 30px;
-      max-width: 50px;
-      position: absolute;
-      top: 11px;
-      left: 30px; }
-      nav .hamburger .menu-mobile {
-        display: none;
-        height: 150px; }
-        nav .hamburger .menu-mobile li {
-          display: inline-block;
-          width: 200px;
-          background-color: #e1261c;
-          list-style: none;
-          position: relative;
-          top: 33px;
-          left: -70px;
-          height: 34px;
-          line-height: 15px;
-          padding: 10px; }
-          nav .hamburger .menu-mobile li a {
-            color: white; }
-    nav .hamburger-inner, nav .hamburger-inner:after, nav .hamburger-inner:before {
-      background-color: white;
-      position: absolute;
-      width: 40px;
-      height: 4px;
-      border-radius: 5px;
-      content: '\00a0';
-      transition-timing-function: ease;
-      transition-duration: .2s;
-      transition-property: transform,opacity; }
-    nav .hamburger-inner:before {
-      top: 10px; }
-    nav .hamburger-inner:after {
-      top: 20px; }
-    nav .hamburger.open .hamburger-inner {
-      transform: translate3d(0, 10px, 0) rotate(45deg); }
-    nav .hamburger.open .hamburger-inner:after {
-      transform: translate3d(0, -20px, 0) rotate(-90deg); }
-    nav .hamburger.open .hamburger-inner:before {
-      transform: translate3d(0, -10px, 0) rotate(90deg); } }
 
 main {
   /*PARALLAX*/ }
