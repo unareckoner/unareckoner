@@ -1689,6 +1689,42 @@ main {
     main .parallax-six .col-set2 .col-2 {
       width: 50%;
       float: right; }
+  main .parallax-seven {
+    background: white;
+    border-top: 12px solid #e2e9ea;
+    border-bottom: 12px solid #e2e9ea; }
+    main .parallax-seven .content {
+      max-width: 1110px;
+      margin: 0 auto;
+      width: 1000px;
+      position: realtive; }
+    main .parallax-seven .cont_carousel .owl-carousel .owl-nav.disabled {
+      display: block; }
+    main .parallax-seven .cont_carousel .button.secondary {
+      display: none; }
+    main .parallax-seven .cont_carousel .owl-nav {
+      position: absolute;
+      width: 110%;
+      left: -5%;
+      top: 25%;
+      margin: 0; }
+      main .parallax-seven .cont_carousel .owl-nav .owl-prev,
+      main .parallax-seven .cont_carousel .owl-nav .owl-next {
+        background: transparent url("../images/arrow_prev.png") 0 0 no-repeat;
+        background-size: 35px auto;
+        text-indent: -99999%;
+        font-size: 0;
+        width: 35px;
+        height: 50px; }
+        main .parallax-seven .cont_carousel .owl-nav .owl-prev:hover,
+        main .parallax-seven .cont_carousel .owl-nav .owl-next:hover {
+          opacity: .7; }
+      main .parallax-seven .cont_carousel .owl-nav .owl-prev {
+        float: left; }
+      main .parallax-seven .cont_carousel .owl-nav .owl-next {
+        float: right;
+        background: transparent url("../images/arrow_next.png") 0 0 no-repeat;
+        background-size: 35px auto; }
 
 /* /////////////////////*/
 /* ======= MENU ======= */

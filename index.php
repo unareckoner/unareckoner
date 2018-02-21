@@ -7,6 +7,8 @@
         <link rel="icon" type="image/png" href="images/header/index.ico" >
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="bootstrap-sass-master/assets/stylesheets/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
         <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -14,8 +16,10 @@
         <script type="text/javascript" src="scripts/nestle.js"></script>
         <script type="text/javascript" src="bootstrap-sass-master/assets/javascripts/bootstrap.min.js"></script>
         <script type="text/javascript" src="bootstrap-sass-master/assets/javascripts/bootstrap-sprockets.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
+        <!--<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>-->
+        <script type="text/javascript" src="js/owl.carousel.js"></script>
+        <script type="text/javascript" src="js/owl.autoplay.js"></script>
         <link rel="stylesheet" type="text/css" href="css/roundslider.min.css">
         <link rel=stylesheet href="bootstrap-sass-master/assets/stylesheets/bootstrap.css" type="text/css"/>
         <link rel=stylesheet href="css/animate.css" type="text/css"/>
@@ -143,6 +147,11 @@
                                 <p>Horario de atención: <br><span>Martes y Jueves <br>10:00 - 18:00</span></p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="parallax parallax-seven">
+                    <div class="content">
+                        <?php include 'html/carousel_seguros.html' ?>
                     </div>
                 </div>
             </div>

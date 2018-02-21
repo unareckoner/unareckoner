@@ -385,4 +385,50 @@ main{
             }
         }
     }
+    .parallax-seven {
+        background: white;
+        border-top: 12px solid #e2e9ea;
+        border-bottom: 12px solid #e2e9ea;
+        .content {
+            max-width: 1110px;
+            margin: 0 auto;
+            width: 1000px;
+            position: realtive;
+        }
+        .cont_carousel {
+            .owl-carousel .owl-nav.disabled {
+                display: block;
+            }
+            .button.secondary {
+                display: none;
+            }
+            .owl-nav {
+                position: absolute;
+                width: 110%;
+                left: -5%;
+                top: 25%;
+                margin: 0;
+                .owl-prev,
+                .owl-next {
+                    background: transparent url('../images/arrow_prev.png') 0 0 no-repeat;
+                    background-size: 35px auto;
+                    text-indent: -99999%;
+                    font-size: 0;
+                    width: 35px;
+                    height: 50px;
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+                .owl-prev {
+                    float: left;
+                }
+                .owl-next {
+                    float: right;
+                    background: transparent url('../images/arrow_next.png') 0 0 no-repeat;
+                    background-size: 35px auto;
+                }
+            }
+        }
+    }
 }
