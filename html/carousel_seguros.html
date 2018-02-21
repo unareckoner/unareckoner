@@ -1,0 +1,52 @@
+<section id="demos">
+      <div class="row">
+        <div class="cont_carousel">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <h4><img src="images/logo_aseguradora_allianz.jpg" alt="Seguros Allianz"></h4>
+            </div>
+            <div class="item">
+              <h4><img src="images/logo_aseguradora_gnp.jpg" alt="Seguros GNP"></h4>
+            </div>
+            <div class="item">
+              <h4><img src="images/logo_aseguradora_mapfre.jpg" alt="Seguros Mapfre"></h4>
+            </div>
+            <div class="item">
+              <h4><img src="images/logo_aseguradora_metlife.jpg" alt="Seguros Metlife"></h4>
+            </div>
+            <div class="item">
+              <h4><img src="images/logo_aseguradora_multiva.jpg" alt="Seguros Multiva"></h4>
+            </div>
+            <div class="item">
+              <h4><img src="images/logo_aseguradora_seguros-monterrey.jpg" alt="Seguros Monterrey"></h4>
+            </div>
+            <div class="item">
+              <h4><img src="images/logo_aseguradora_vrim.jpg" alt="Seguros Vrim"></h4>
+            </div>
+          </div>
+          <a class="button secondary play">Play</a> 
+          <a class="button secondary stop">Stop</a> 
+
+
+          <script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 5,
+                loop: true,
+                margin: 50,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+              });
+              $('.play').on('click', function() {
+                owl.trigger('play.owl.autoplay', [1000])
+              })
+              $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+              })
+            })
+          </script>
+        </div>
+      </div>
+    </section>
