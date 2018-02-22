@@ -1,640 +1,77 @@
-.dashboard ,
-.contacto ,
-.cms ,
-.cart ,
-.success ,
-.fast_register ,
-.detail_solution {
-    margin: 0;
-    padding: 0;
-    font-family: $gotham-book;
-    font-size: 12pt;
+body main {
+    h1{
+        font-family: $gotham-medium;
+        font-size: 33px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        line-height: 45px;
+        color: $c-blue;
+        text-align: center;
+        font-weight: normal;
+        width: 100%; 
+    }
+    h2 {
+        font-family: $gotham-medium;
+        font-size: 28px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        line-height: 35px;
+        color: #3c646e;
+        text-align: center;
+        font-weight: normal;
+        width: 100%; 
+    }
+    h3{
+        font-family: $gotham-medium;
+        font-size: 23px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        line-height: 28px;
+        color: #3c646e;
+        text-align: center;
+        font-weight: normal;
+        width: 100%; 
+    }
     p {
         font-family: $gotham-book;
-        font-size: 14px;
-    }
-    .strong{
-        font-family: $gotham-bold;
-        font-weight: normal;
-    }
-    .medium {
-        font-family: $gotham-medium;
-        font-weight: normal;
-    }
-    ul.list_ico {
-        float: none;
-        width: 42%;
-        color: white;
-        font-family: $gotham-book;
-        font-size: 16px;
-        display: table;
-
-        margin: 0 auto;
-        li {
-            list-style: none;
-            background: transparent url('../images/checkout/ico_account.png') 0 0 no-repeat;
-            background-size: 50px;
-            padding-left: 70px;
-            min-height: 60px;
-            margin-bottom: 20px;
-        }
-
-        li.mail {
-            background-image: url('../images/checkout/ico_mail.png');
-        }
-    }
-
-    /* ==== ONLY MOBILE ==== */
-    .onlymob {
-        display: none;
-    }
-    .title_td {
-        font-family: $gotham-bold;
-        float: left;
-        margin-right: 10px;
-    }
-
-    /* ==== FLOAT ===== */
-    .f-left {
-        float:left;
-    }
-    .f-right {
-        float: right;
-    }
-    .f-center {
-        float: none;
-        margin: 0 auto;
-        display: table;
-    }
-
-    /* ==== WIDTH ===== */
-    .w-auto {
-        width: auto;
-    }
-    .w-100 {
-        width: 100%;
-    }
-    .w-60 {
-        width: 60%;
-    }
-
-    /* ==== ALIGN ===== */
-    .a-left {
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-transform: none;
+        line-height: 1.7em;
+        color: $c-text;
         text-align: left;
-    }
-    .a-right {
-        text-align: right;
-    }
-    .a-center {
-        text-align: center;
-    }
-
-    /* ==== GRID ===== */
-    .col2 {
-        width: 50%;
-        float: left;
-    }
-    .col2-p {
-        width: 48%;
-    }
-    .col3 {
-        width: 33.3%
-    }
-    .col4 {
-        width: 25%;
-        float: left;
-    }
-    .col4-p {
-        width: 23%;
-        float: left;
-        padding: 1%;
-    }
-    .col5 {
-        width: 20%;
-        float: left;
-    }
-    .col5-p {
-        width: 19%;
-        float: left;
-        padding: .5%;
-    }
-    .c-p85 {
-        width: 85%;
-    }
-    .c-p75 {
-        width: 75%;
-    }
-    .c-p15 {
-        padding: 0 15px;
-    }
-
-    /* ===== BUTTON ===== */
-    .btn-dash {
-        background: $bg-red;
-        border: none;
-        border-radius: 5px;
-        color: white;  
-        cursor: pointer;
-        font-family: $gotham-book;
-        font-size: 16px;
-        height: 50px;
-        line-height: 50px;
-        margin-top: 30px;
-        padding: 0 40px;
-        text-transform: uppercase;
-        text-align: center;
-        transition: 1s;
-        width: auto;
-    }
-    .btn-dash.mini {
-        margin: 0;
-        height: 35px;
-        line-height: 35px;
-        padding: 0 20px;
-        font-size: 14px;
-    }
-    .btn-dash.cart {
-        position: relative;
-        padding-left: 55px;
-    }
-    .btn-dash.cart:before {
-        content:"";
-        width:32px;
-        height:32px;
-        position:absolute;
-        background:url("../images/sprite.png") -48px -46px no-repeat;
-        background-size: 130px;
-        left:15px;; 
-        top: 5px;
-    }
-    .btn-dash.select {
-        padding-left: 50px;
-        height: 50px;
-        line-height: 50px;
-        position: relative;
-    }
-    .btn-dash.select:before {
-        content:"";
-        width:32px;
-        height:32px;
-        position:absolute;
-        background:url("../images/check_sel.png") 0 5px no-repeat;
-        background-size: 25px;
-        left:15px;; 
-        top: 5px;
-    }
-    .btn-dash.select.deselect:before {
-        content:"";
-        width:32px;
-        height:32px;
-        position:absolute;
-        background:url("../images/check_desel.png") 0 5px no-repeat;
-        background-size: 25px;
-        left:15px;; 
-        top: 5px;
-    }
-    .btn-dash.red {
-        background: $bg-red;
-    }
-    .btn-dash:hover,
-        .btn-dash.red:hover {
-        background: $c-dark-red;
-    }
-    .btn-dash.white {
-        background: white;
-        border: 1px solid $bg-red;
-        color: $bg-red;
-        font-size: 14px;
-        font-family: $gotham-medium;
-        height: 25px;
-        line-height: 25px;
-        padding: 0 20px;
-    }
-    .btn-dash.black {
-        background: black;
-        color: white;
-    }
-    .btn-dash.black:hover {
-        background: $c-dark-red;
-    }
-    .btn-dash.cta {
+        font-weight: normal;
         width: 100%;
-        font-family: $gotham-bold;
+        strong {
+            font-family: $gotham-medium;
+        } 
+    }
+    p.message {
+        line-height: 2em;
         font-size: 20px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
     }
-    .btn-input {
-        width: 54px;
-        height: 53px;
-        border: none;
-        background: url(../images/btn_input.png) 0 0 no-repeat;
-        background-size: 82%;
-        float: left;
-        margin-left: 10px;
-    }
-    .btn_right {
-        font-size: 15px;
-    }
-
-    /* ===== LINK ====== * /
-    .lnk {
-        text-decoration: underline;
-        font-family: $gotham-book;
-        color: $bg-red;
-        font-size: 12px;
-        margin-top: 20px;
-    }
-
-    /* ===== BORDER ===== */
-    .border-b {
-        border-bottom: solid 1px #ededed;
-    }
-    .border-t {
-        border-top: solid 1px #ededed;
-    }
-
-    /* ===== DIVIDER ===== */
-    .div100 {
-        width: 100%;
-        height: 100px;
-        float: left;
-    }
-    .div70 {
-        width: 100%;
-        height: 70px;
-        float: left;
-    }
-    .div50 {
-        width: 100%;
-        height: 50px;
-        float: left;
-    }
-    .div30 {
-        width: 100%;
-        height: 30px;
-        float: left;
-    }
-    .div20 {
-        width: 100%;
-        height: 20px;
-        float: left;
-    }
-    .div10 {
-        width: 100%;
-        height: 10px;
-        float: left;
-    }
-    .div5 {
-        width: 100%;
-        height: 5px;
-        float: left;
-    }
-
-    /* ===== ELEMENTS ===== */
-    input[type='checkbox'],
-    input[type='radio'], {
-        cursor: pointer;
-        width: 20px;
-        height: 20px;
-        margin: 5px 0 0 0;
-    }
-    .mycheck {
-        position: relative;
-        input {
-           opacity: 0;
-           position: absolute; 
-           width:25px;
-           height: 25px;
-           top: 0;
-           z-index: 9;
-        }
-        span {
-            width:25px;
-            height: 25px;
-            border-radius: 3px;
-            background: #ededed;
-            display: table;
-            position: relative;
-        }
-    }
-    .mycheck.selected {
-        span {
-            background: #ededed url('../images/check_sel.png') no-repeat 3px 2px;
-            background-size: 20px;
-        }
-    }
-
-    /* ===== TYPO ===== */
-    .t-book {
-        font-family: $gotham-book;
-    }
-    .t-medium {
+    .btn-cta{
+        background: $c-green;;
+        color: white;
         font-family: $gotham-medium;
-    }
-    .t-bold {
-        font-family: $gotham-bold;
-    }
-
-    /* ====== FORM ====== */
-    .form { 
-        h3 {
-            margin-top: 30px;
-        }
-        label {
-            font-weight: normal;
-        }
-        label,
-        .savebook {
-            font-family: $gotham-medium;
-            height: 40px;
-            line-height: 45px;
-            width: 100%;
-            float: left;
-            span {
-                color: $bg-red;
-            }
-        }       
-        input,
-        select,
-        textarea {
-            background: $c-gray;
-            border-radius: 5px;
-            border: none;
-            color: $c-txt-input;
-            font-family: $gotham-book;
-            font-size: 14px;
-            height: 50px;
-            padding: 0 5%;
-            margin-bottom: 30px;
-            width: 100%;
-        }
-        input:first-child {
-            margin-top: 0;
-        }
-        input.cupon {
-            width: 85%;
-            float: left;
-            font-size: 13px;
-        }
-        textarea {
-            height: 200px;
-            padding-top: 15px;
-        }
-        select {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            overflow: hidden;
-            background: $c-gray url('../images/bkg-select.png') 97% 7px no-repeat;
-            background-size: 36px 36px;
-            position: relative;
-            cursor: pointer;
-            option {
-                background: white;
-                padding: 5px;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                height: 50px;
-            }
-        }
-        select:focus {
-            outline:0;
-        }
-        .label-r {
-            width: 60%;
-            float: right;
-        }
-        .label-l {
-            width: 30%;
-            float: left;
-        }
-        .txt {
-            height: 220px;
-            padding-top: 10px;
-        }
-        .savebook {
-            text-transform: uppercase;
-            font-size: 13px;
-            input[type='checkbox'],
-            input[type='radio'] {
-                width: 20px;
-                height: 20px;
-                margin: 10px 5px 0 0;
-                float: left;
-            }
-        }
-        .cvv {
-            width: 215px;
-        }
-        .info {
-            width: 35px;
-            height: 35px;
-            background: $c-input;
-            border-radius: 10px;
-            line-height: 35px;
-            text-align: center;
-            font-family: Arial;
-            font-weight: 600;
-            font-size: 23px;
-            color: $c-dark-gray;
-            text-decoration: none;
-            margin-top: 5px;
-            margin-left: 25px;
-        }
-        .box {
-            width: 100%;
-            float: left;
-            border: 2px dashed $bg-red;
-            padding: 10px 0 15px;
-            margin: 10px 0 15px;
-            #file {
-                opacity: 0;
-                position:absolute;
-                width: 67%;
-                height: 60px;
-                cursor: pointer;
-            }
-            label {
-                font-family: $gotham-book;
-            }
-            label,
-            .box__button {
-                margin: 0 auto;
-                display: table;
-                cursor: pointer;
-            }
-            .box__button {
-                margin-top: 5px;
-                position: relative;
-                z-index: 8;
-            }
-
-        }
-        .box__dragndrop,
-        .box__uploading,
-        .box__success,
-        .box__error {
-            display: none;
-        }
-        .box.short {
-            #file {
-                width: auto;
-                padding: 0;
-            }
-        }
-    }
-
-    /* === TABLE === */
-    .product-table {
-        float: left;
-        width: 100%;
-        thead {
-            tr {
-                th {
-                    font-family: $gotham-medium;
-                    color: $c-dark-gray;
-                    text-transform: uppercase;
-                    font-size: 16px;
-                    font-weight: normal;
-                }
-            }
-        }
-        tbody {
-            tr {
-                border-bottom: 1px solid #ededed;
-                padding: 20px 0;
-                td {
-                    padding: 10px 0;
-                    img {
-                        width: 60%;
-                    }
-                }
-                td.p-l-15 {
-                    padding-left: 15px;
-                }
-            }
-            tr:last-child {
-                border: none;
-            }
-            tr.no-border {
-                border-bottom: none;
-            }
-        }
-        .prod_name {
-            color: $c-dark-gray;
-            font-family: $gotham-medium;
-            font-size: 12px;
-            font-weight: normal;
-            text-transform: uppercase;
-        }
-        .prod_price {
-            color: $c-dark-gray;
-            font-family: $gotham-medium;
-            font-weight: normal;
-            font-size: 18px;
-            margin: 0;
-            span {
-                font-size: 14px;
-            }
-        }
-        .prod_price.red {
-            color: $bg-dark-red;
-        }
-        .prod_price.red.clear {
-            color: $bg-red;
-        }
-        .prod_qty {
-            color: $c-qty;
-            font-family: $gotham-medium;
-            font-weight: normal;
-            font-size: 20px;
-            display: table;
-            width: auto;
-            margin: 0 auto;
-            span {
-                float: left;
-                margin: 0 5px;
-            }
-            .more,
-            .less {
-                border: 1px solid $c-qty;
-                width: 30px;
-                height: 30px;
-                border-radius: 10px;
-                position: relative;
-            }
-            .more::after,
-            .less::after {
-                content: "+";
-                text-align: center;
-                line-height: 30px;
-            }
-            .less::after {
-                content: "-";
-            }
-        }
-        .prod_delete {
-            background: url(../images/ico_delete.png) 0 0 no-repeat;
-            background-size: 82%;
-            width: 35px;
-            height: 35px;
-            margin: 0 auto;
-            display: table;
-            color: transparent;
-            border: none;
-        }
-    }
-    .bkg-gray {
-        background: $c-gray;        
-    }
-
-    /* ===== ACCORDION ==== */
-    button.accordion {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        line-height: 45px;
+        border-radius: 5px;
         border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-    }
-    button.accordion.active, button.accordion:hover {
-        background-color: #ccc; 
-    }
-    div.panel {
-        padding: 0 18px;
-        display: block;
-        background-color: white;
-        -webkit-transition: width .3s; /* Safari */
-        transition: .3s;
-        box-shadow: none;
-    }
-}
-
-.breadcrumbs{
-    color:#cbcbcb;
-    font-size:11px;
-    text-transform:uppercase;
-    padding-left:35px;
-    font-weight:normal;
-    a {
-        color:#cbcbcb;
-        font-size:11px;
-        text-transform:uppercase;
-        text-decoration: none;
-        &:after{
-            margin-left:3px;
-            margin-right:4px;
-            content:" ";
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 45px;
+        padding: 0 25px;
+        transition: .5s;
+        &:hover {
+            background: $c-green-dark;
+            text-decoration: none;
         }
     }
-    a:hover {
-        text-decoration: underline;
-    }
-}
-.breadcrumbs.nopadd {
-    padding: 0;
 }

@@ -13,7 +13,7 @@
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-        <script type="text/javascript" src="scripts/nestle.js"></script>
+        <script type="text/javascript" src="scripts/harim.js"></script>
         <script type="text/javascript" src="bootstrap-sass-master/assets/javascripts/bootstrap.min.js"></script>
         <script type="text/javascript" src="bootstrap-sass-master/assets/javascripts/bootstrap-sprockets.js"></script>
         <!--<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>

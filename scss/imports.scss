@@ -43,8 +43,6 @@ $red-btn: #df2432;
 
 // BUTTONS
 
-//botón de prueba, se puede modificar este mixin
-
 @mixin btn-cta{
     background: $c-green;;
     color: white;
@@ -64,8 +62,54 @@ $red-btn: #df2432;
     &:hover {
         background: $c-green-dark;
         text-decoration: none;
-    }
-    
+    }  
+}
+
+// TITLES
+
+@mixin h1{
+    font-family: $gotham-medium;
+    font-size: 33px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 45px;
+    color: $c-blue;
+    text-align: center;
+    font-weight: normal;
+    width: 100%; 
+}
+@mixin h2{
+    font-family: $gotham-medium;
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 35px;
+    color: #3c646e;
+    text-align: center;
+    font-weight: normal;
+    width: 100%; 
+}
+@mixin h3{
+    font-family: $gotham-medium;
+    font-size: 23px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 28px;
+    color: #3c646e;
+    text-align: center;
+    font-weight: normal;
+    width: 100%; 
+}
+@mixin p {
+    font-family: $gotham-book;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: none;
+    line-height: 1.3em;
+    color: $c-text;
+    text-align: left;
+    font-weight: normal;
+    width: 100%; 
 }
 
 
