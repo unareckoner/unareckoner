@@ -1,0 +1,116 @@
+.padecimientos {
+    main {
+        background: #bfe0e9;
+        .banner-men {
+            max-width: 1110px;
+            margin: 0 auto;
+            width: 100%;
+            display: table;
+        }
+        .cont_img {
+            position: relative;
+            h1 {
+                @include h1;
+                position: absolute;
+                top: 25px;
+                width: 100%;
+                margin: 0;
+            }
+            img {
+                width: 1000px;
+                height: auto;
+                margin: 0 auto;
+                display: table;
+            }
+        }
+        .tipo_padecimientos {
+            max-width: 1110px;
+            margin: 0 auto;
+            width: 100%;
+            display: table;
+            h2 {
+                margin: 0 0 70px 0;
+            }
+            .tabs {
+                width: 100%;
+                float: left;
+                margin-bottom: 40px;
+                h3 {
+                   @include h3;
+                   width: 40%;
+                   padding: 0 0 10px 0;
+                   border-bottom: 3px solid $c-blue;
+                   text-align: left;
+                   margin: 0;
+                   position: relative;
+                   transition: 1.5s;
+                   &:before {
+                       content:'';
+                       background: url('../images/sp_padecimientos.png') 0 0 no-repeat;
+                       width: 90px;
+                       height: 90px;
+                       float: left;
+                       margin-right: 15px;
+                       position: relative;
+                       top: -10px;
+                   }
+                   &:after {
+                        content:'';
+                        background: url('../images/arrow_toggle_down.png') 0 0 no-repeat;
+                        background-size: 30px auto;
+                        width: 30px;
+                        height: 20px;
+                        float: right;
+                        position: relative;
+                        transition: 3s;
+                        top: 5px;
+                   }
+                }
+                h3.active {
+                    width: 100%;
+                    &:after {
+                        background: url('../images/arrow_toggle_up.png') 0 0 no-repeat;
+                        background-size: 30px auto;
+                   }
+                }
+                .panel {
+                    padding: 35px 105px;
+                    display: none;
+                }
+                &.shoulder {
+                    h3 {
+                        &:before {
+                            background-position: -100px 0;
+                        }
+                    }
+                }
+                &.foot {
+                    h3 {
+                        &:before {
+                            background-position: -200px 0;
+                        }
+                    }
+                }
+                &.knee {
+                    h3 {
+                        &:before {
+                            background-position: -300px 0;
+                        }
+                    }
+                }
+                &.wirst {
+                    h3 {
+                        &:before {
+                            background-position: -400px 0;
+                        }
+                    }
+                }
+            }
+            .btn-cta {
+                margin: 50px auto 100px auto;
+                float: none;
+                display: table;
+            }
+        }
+    }
+}

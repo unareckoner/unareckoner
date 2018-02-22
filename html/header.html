@@ -1,0 +1,62 @@
+<header>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="col-md-6 col-sm-6" id="branding">
+                <h1 class="title_site">
+                    <a href="../index.php" class="logo_harim">Dr. Harim Arias</a>
+                    <a href="../index.php" class="subtitle">Traumatólogo y ortopedista</a>
+                    <a href="../index.php" class="title">Dr. Harim Arias Gutiérrez</a>
+                </h1>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <ul class="social">
+                    <li><a class="lk">Linkedin</a></li>
+                    <li><a class="fb">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <button class="btn-cta schedule">
+                    Agenda tu consulta
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav onmouseleave="submenu_close();">
+    <div class="hamburger" onclick="menu_open();">
+        <div class="hamburger-inner"></div>
+        <ul class="menu-mobile">
+            <li class=""><a href="html/experiencia.php">Experiencia</a></li>
+            <li class=""><a href="html/padecimientos.php">Padecimientos</a></li>
+                <ul>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="elbow">Codo</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="shoulder">Hombro</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="foot">Pie</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="knee">Rodilla</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="hand">Muñeca</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="others">Otros</a></li>
+                </ul>
+            <li class=""><a href="html/servicios.php">Servicios</a></li>
+            <li class=""><a href="html/contacto.php">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="cont-menu">
+        <ul class="menu-desk">
+            <li class="first"></li>
+            <li class="" onmouseover="submenu_close();"><a href="html/experiencia.php">Experiencia</a></li>
+            <li class="" >
+                <a href="html/padecimientos.php" onmouseover="submenu_open();" class="submenu_open">Padecimientos</a>
+                <ul class="menulv2" id="sumbenulv2" onmouseover="submenu_open();">
+                    <li class="sublv1"><a href="html/padecimientos.php" class="elbow">Codo</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="shoulder">Hombro</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="foot">Pie</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="knee">Rodilla</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="hand">Muñeca</a></li>
+                    <li class="sublv1"><a href="html/padecimientos.php" class="others">Otros</a></li>
+                </ul>
+            </li>
+            <li class="" onmouseover="submenu_close();"><a href="html/servicios.php">Servicios</a></li>
+            <li class="last" onmouseover="submenu_close();"><a href="html/contacto.php">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
