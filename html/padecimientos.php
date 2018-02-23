@@ -13,6 +13,21 @@
 			    <div class="banner-men">
 			        <div class="cont_img">
 			        	<h1>¿Qué te duele?</h1>
+			        	<div class="contain elbow">
+						    <button class="pulse-button" onclick="goelbow(); return false;">Dolor de codo</button>
+						</div>
+						<div class="contain shoulder">
+						    <button class="pulse-button" onclick="goshoulder(); return false;">Dolor de hombro</button>
+						</div>
+						<div class="contain foot">
+						    <button class="pulse-button" onclick="gofoot(); return false;">Dolor de pie</button>
+						</div>
+						<div class="contain knee">
+						    <button class="pulse-button" onclick="goknee(); return false;">Dolor de rodilla</button>
+						</div>
+						<div class="contain wirst">
+						    <button class="pulse-button" onclick="gowirst(); return false;">Dolor de muñeca</button>
+						</div>
 			            <img src="../images/men.png" alt="Padecimientos ortopédicos">
 			        </div>
 			    </div>
@@ -43,7 +58,7 @@
                         	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc tellus, condimentum non bibendum vitae, volutpat non velit. Mauris in ex a ex tempus iaculis eget euismod ex. Nam vitae metus et urna mattis gravida id nec risus. Cras molestie, leo sed lacinia pharetra, ipsum purus dictum tortor, at congue ipsum ex quis erat. Vivamus cursus ipsum eu ipsum sollicitudin scelerisque. Nunc in vulputate tellus, at lacinia massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam in nunc vitae nunc vehicula varius ac id arcu. Sed suscipit facilisis sapien, id tincidunt nisl ultrices quis. Morbi posuere pellentesque nisl.</p>
                         </div>
                     </div>
-                    <div id="tab4" class="tabs wirst">
+                    <div id="tab5" class="tabs wirst">
                         <h3 class="accordion">Dolor de muñeca</h3>
                         <div class="cont_tab panel">
                         	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc tellus, condimentum non bibendum vitae, volutpat non velit. Mauris in ex a ex tempus iaculis eget euismod ex. Nam vitae metus et urna mattis gravida id nec risus. Cras molestie, leo sed lacinia pharetra, ipsum purus dictum tortor, at congue ipsum ex quis erat. Vivamus cursus ipsum eu ipsum sollicitudin scelerisque. Nunc in vulputate tellus, at lacinia massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam in nunc vitae nunc vehicula varius ac id arcu. Sed suscipit facilisis sapien, id tincidunt nisl ultrices quis. Morbi posuere pellentesque nisl.</p>
