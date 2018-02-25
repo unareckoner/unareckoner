@@ -45,7 +45,7 @@
             <li class="first"></li>
             <li class="" onmouseover="submenu_close();"><a href="html/experiencia.php">Experiencia</a></li>
             <li class="" >
-                <a href="html/padecimientos.php" onmouseover="submenu_open();" class="submenu_open">Padecimientos</a>
+                <a href="html/padecimientos.php" onmouseover="submenu_open();" class="submenu_open" onmouseout="submenu_close();">Padecimientos</a>
                 <ul class="menulv2" id="sumbenulv2" onmouseover="submenu_open();">
                     <li class="sublv1"><a onclick="goelbowmenu(); return false;" href="" class="elbow">Codo</a></li>
                     <li class="sublv1"><a href="html/padecimientos.php" class="shoulder">Hombro</a></li>
@@ -55,7 +55,15 @@
                     <li class="sublv1"><a href="html/padecimientos.php" class="others">Otros</a></li>
                 </ul>
             </li>
-            <li class="" onmouseover="submenu_close();"><a href="html/servicios.php">Servicios</a></li>
+            <li class="" >
+                <a href="html/servicios.php" onmouseover="submenu_open1();" class="submenu_open1" onmouseout="submenu_close1();">Servicios</a>
+                <ul class="menulv3" id="sumbenulv3" onmouseover="submenu_open1();" onmouseout="submenu_close1();">  
+                    <li class="sublv2"><a href="html/servicios.php" class="">Cirugías</a></li>
+                    <li class="sublv2"><a href="html/servicios.php" class="">Rehabilitación</a></li>
+                    <li class="sublv2"><a href="html/servicios.php" class="">Hospitalización</a></li>
+                    <li class="sublv2"><a href="html/servicios.php" class="">Medicina del deporte</a></li>
+                </ul>
+            </li>
             <li class="last" onmouseover="submenu_close();"><a href="html/contacto.php">Contacto</a></li>
         </ul>
     </div>

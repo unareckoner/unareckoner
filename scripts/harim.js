@@ -30,24 +30,27 @@ function menu_open(){
 
 function submenu_open(){
     $('.menulv2').stop(true, true).fadeIn().delay(300);
+    $('.submenu_open').addClass('active');
 }
 function submenu_close(){
     $('.menulv2').stop(true, true).delay(300).fadeOut();
-}
-function display_minicart(){
-    $('.mini-cart').toggleClass('open');
-}
-function hide_menu1(){
-    $('#unregistered').css('display', 'none');
-    $('#login').css('display', 'block');
-    //$('#branding').addClass('col-md-6').removeClass('col-md-5');
+    $('.submenu_open').removeClass('active');
 }
 
-function show_menu1(){
-    $('#unregistered').css('display', 'block');
-    $('#login').css('display', 'none');
-    //$('#branding').removeClass('col-md-5').addClass('col-md-5');
+
+// Servicios //
+
+function submenu_open1(){
+    $('.menulv3').stop(true, true).fadeIn().delay(300);
+    $('.submenu_open1').addClass('active');
 }
+function submenu_close1(){
+    $('.menulv3').stop(true, true).delay(300).fadeOut();
+    $('.submenu_open1').removeClass('active');
+}
+
+
+
 
 
 function goelbowmenu() {

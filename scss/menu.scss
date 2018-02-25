@@ -24,7 +24,7 @@ nav {
         position:relative;
         /*max-width: 1250px;*/
         padding: 0;
-        li{
+        li {
             display: inline-block;
             text-align: center;
             vertical-align: middle;
@@ -32,28 +32,31 @@ nav {
             position: initial;
             padding: 0;
             width: 19.8%;
-            & > a{
+            & > a {
                 color: white;
                 text-align: center;
                 display: block;
                 line-height: 60px;
                 font-size: 15px;
                 letter-spacing: 1px;
-                &:hover{
+                transition: 1s;
+                &:hover,
+                &.active {
                     color: white;
                     text-decoration: none;
                     background-color: $c-blue-extra;
-                    -webkit-transition: background-color 500ms;
-                    -moz-transition: background-color 500ms;
-                    -o-transition: background-color 500ms;
-                    transition: background-color 500ms;
+                    -webkit-transition: background-color 300ms;
+                    -moz-transition: background-color 300ms;
+                    -o-transition: background-color 300ms;
+                    transition: background-color 300ms;
                 }
             }
         }
         li.first {
             width: 14%;
         }
-        .menulv2{
+        .menulv2,
+        .menulv3 {
             position:absolute;
             width: 100%;
             top: 60px;
@@ -67,7 +70,7 @@ nav {
                 display: inline-block;
                 width: 14%;
                 margin-left: 0%;
-                a{
+                a {
                     color: white;
                     line-height: 50px;
                     font-family: $gotham-book;
@@ -125,6 +128,15 @@ nav {
                 a.others {
                     &:before {
                         background-image: none;
+                    }
+                }
+            }
+            .sublv2 {
+                width: auto;
+                margin-left: 5%;
+                a {
+                    &:before {
+                        background: none;
                     }
                 }
             }

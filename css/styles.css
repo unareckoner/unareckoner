@@ -606,18 +606,20 @@ nav {
         display: block;
         line-height: 60px;
         font-size: 15px;
-        letter-spacing: 1px; }
-        nav ul.menu-desk li > a:hover {
+        letter-spacing: 1px;
+        transition: 1s; }
+        nav ul.menu-desk li > a:hover, nav ul.menu-desk li > a.active {
           color: white;
           text-decoration: none;
           background-color: #428393;
-          -webkit-transition: background-color 500ms;
-          -moz-transition: background-color 500ms;
-          -o-transition: background-color 500ms;
-          transition: background-color 500ms; }
+          -webkit-transition: background-color 300ms;
+          -moz-transition: background-color 300ms;
+          -o-transition: background-color 300ms;
+          transition: background-color 300ms; }
     nav ul.menu-desk li.first {
       width: 14%; }
-    nav ul.menu-desk .menulv2 {
+    nav ul.menu-desk .menulv2,
+    nav ul.menu-desk .menulv3 {
       position: absolute;
       width: 100%;
       top: 60px;
@@ -626,21 +628,25 @@ nav {
       height: 50px;
       display: none;
       z-index: 99; }
-      nav ul.menu-desk .menulv2 li {
+      nav ul.menu-desk .menulv2 li,
+      nav ul.menu-desk .menulv3 li {
         list-style: none;
         display: inline-block;
         width: 14%;
         margin-left: 0%; }
-        nav ul.menu-desk .menulv2 li a {
+        nav ul.menu-desk .menulv2 li a,
+        nav ul.menu-desk .menulv3 li a {
           color: white;
           line-height: 50px;
           font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
           display: inline-block;
           position: relative; }
-          nav ul.menu-desk .menulv2 li a:hover {
+          nav ul.menu-desk .menulv2 li a:hover,
+          nav ul.menu-desk .menulv3 li a:hover {
             transition: width 100ms ease;
             opacity: 0.7; }
-          nav ul.menu-desk .menulv2 li a:before {
+          nav ul.menu-desk .menulv2 li a:before,
+          nav ul.menu-desk .menulv3 li a:before {
             content: '\00a0';
             width: 30px;
             height: 30px;
@@ -652,22 +658,35 @@ nav {
             margin-right: 9px;
             margin-top: 9px;
             float: left; }
-          nav ul.menu-desk .menulv2 li a.percent:before {
+          nav ul.menu-desk .menulv2 li a.percent:before,
+          nav ul.menu-desk .menulv3 li a.percent:before {
             content: '%';
             background-image: none;
             font-size: 24px;
             line-height: 40px;
             font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif; }
-        nav ul.menu-desk .menulv2 li a.shoulder:before {
+        nav ul.menu-desk .menulv2 li a.shoulder:before,
+        nav ul.menu-desk .menulv3 li a.shoulder:before {
           background-position: -33px 0; }
-        nav ul.menu-desk .menulv2 li a.foot:before {
+        nav ul.menu-desk .menulv2 li a.foot:before,
+        nav ul.menu-desk .menulv3 li a.foot:before {
           background-position: -66px 0; }
-        nav ul.menu-desk .menulv2 li a.knee:before {
+        nav ul.menu-desk .menulv2 li a.knee:before,
+        nav ul.menu-desk .menulv3 li a.knee:before {
           background-position: -100px 0; }
-        nav ul.menu-desk .menulv2 li a.hand:before {
+        nav ul.menu-desk .menulv2 li a.hand:before,
+        nav ul.menu-desk .menulv3 li a.hand:before {
           background-position: -133px 0; }
-        nav ul.menu-desk .menulv2 li a.others:before {
+        nav ul.menu-desk .menulv2 li a.others:before,
+        nav ul.menu-desk .menulv3 li a.others:before {
           background-image: none; }
+      nav ul.menu-desk .menulv2 .sublv2,
+      nav ul.menu-desk .menulv3 .sublv2 {
+        width: auto;
+        margin-left: 5%; }
+        nav ul.menu-desk .menulv2 .sublv2 a:before,
+        nav ul.menu-desk .menulv3 .sublv2 a:before {
+          background: none; }
   @media (max-width: 767px) {
     nav {
       height: 45px;
@@ -925,6 +944,85 @@ footer {
 @keyframes pulse {
   to {
     box-shadow: 0 0 0 45px rgba(232, 76, 61, 0); } }
+.experiencia {
+  background: #eff8fa; }
+  .experiencia .banner-photos {
+    width: 100%; }
+    .experiencia .banner-photos img {
+      width: 100%; }
+  .experiencia h1 {
+    margin: 60px 0 50px 0; }
+  .experiencia h2 {
+    color: #1b1b1b;
+    margin-bottom: 70px; }
+  .experiencia .cont_experiencia {
+    width: 1000px;
+    margin: 0 auto;
+    display: table;
+    float: none; }
+    .experiencia .cont_experiencia .tabs {
+      margin-bottom: 35px; }
+      .experiencia .cont_experiencia .tabs h3 {
+        font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
+        font-size: 23px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        line-height: 28px;
+        color: #3c646e;
+        text-align: center;
+        font-weight: normal;
+        width: 100%;
+        padding: 0 0 10px 0;
+        border-bottom: 3px solid #3c646e;
+        text-align: left;
+        margin: 0;
+        position: relative;
+        transition: 1.5s; }
+        .experiencia .cont_experiencia .tabs h3:after {
+          content: '';
+          background: url("../images/arrow_toggle_down.png") 0 0 no-repeat;
+          background-size: 30px auto;
+          width: 30px;
+          height: 20px;
+          float: right;
+          position: relative;
+          transition: 3s;
+          top: 5px; }
+      .experiencia .cont_experiencia .tabs h3.active {
+        width: 100%; }
+        .experiencia .cont_experiencia .tabs h3.active:after {
+          background: url("../images/arrow_toggle_up.png") 0 0 no-repeat;
+          background-size: 30px auto; }
+      .experiencia .cont_experiencia .tabs h4 {
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif; }
+      .experiencia .cont_experiencia .tabs p {
+        line-height: 1.5em;
+        margin: 0; }
+      .experiencia .cont_experiencia .tabs .panel {
+        padding: 35px 100px;
+        display: none;
+        background: #e5f3f7; }
+    .experiencia .cont_experiencia #tab1_ex .cont_txt {
+      width: 85%;
+      float: left; }
+    .experiencia .cont_experiencia #tab1_ex .cont_img {
+      width: 6%;
+      float: right; }
+    .experiencia .cont_experiencia #tab1_ex .panel {
+      float: left; }
+  .experiencia .block_cta {
+    margin-top: 130px;
+    display: inline-block; }
+    .experiencia .block_cta .message {
+      width: 82%;
+      margin-bottom: 40px; }
+    .experiencia .block_cta .btn-cta {
+      margin: 50px auto 100px auto;
+      float: none;
+      display: table; }
+
 .top-banner-dash {
   background-color: #e1261c;
   display: table;
