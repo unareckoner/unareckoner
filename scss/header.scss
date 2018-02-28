@@ -31,13 +31,13 @@ header {
             }
         }
         .logo_harim {
-            background: transparent url('../images/logo_harim.png') no-repeat 0 -10px;
-            background-size: 150px auto;
-            width: 150px;
-            height: 130px;
+            background: transparent url('../images/logo_harim.png') no-repeat 0 0;
+            background-size: 170px auto;
+            width: 160px;
+            height: 135px;
             float: left;
             text-indent: -99999%;
-            margin-right: 30px;
+            margin-right: 20px;
             position: relative;
             z-index: 99;
         }
