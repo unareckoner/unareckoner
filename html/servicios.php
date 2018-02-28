@@ -18,12 +18,12 @@
 			    <div class="cont_servicios">
 			    	<h1>Servicios</h1>
 			    	<ul>
-                        <li><a>Tratamientos Ortopédicos</a></li>
+                        <li><a href="tratamientos.php">Tratamientos Ortopédicos</a></li>
                         <li><a>Cirugías</a></li>
                         <li><a>Rehabilitación</a></li>
                         <li><a>Hospitalización</a></li>
-                        <li><a>Medicina del deporte</a></li>
-                    </ul>
+                        <li><a>Lesiones Deportivas</a></li>
+                    </ul> 
                     
                     <div class="block_cta">
                     	<p class="message">Valoración precisa y opciones para tu tratamiento, manejo médico, terapia física específica o cirugía.</p>
