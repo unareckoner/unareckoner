@@ -80,3 +80,102 @@ main {
     float: left;
     width: 100%;
 }
+
+
+/* ======= MEDIUM ======*/
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 90px;
+        .col-md-12,
+        .col-md-6 {
+            padding: 0;
+        }
+        .container {
+            .title_site {
+                .logo_harim {
+                    background-size: 78px auto;
+                    width: 24%;
+                    height: 70px;
+                    margin-right: 10px;
+                }
+                a.subtitle {
+                    margin-top: 5px;
+                    font-size: 10.5px;
+                }
+                a.title {
+                    font-size: 12px;
+                }
+                a.subtitle,
+                a.title {
+                    float: left;
+                    width: 72%;
+                }
+            }
+            ul.social {
+                float: left;
+                margin: 0;
+                li a {
+                    width: 20px;
+                    height: 20px;
+                    background-size: auto 20px;
+                    margin-right: 5px;
+                }
+            }
+            .btn-cta {
+                font-size: 12px;
+                padding: 0 18px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+/* ======= SMALL ======*/
+
+@media only screen and (max-width: 599px) {
+    header {
+        height: 90px;
+        .container {
+            height: 145px;
+            .col-md-2 {
+                width: 70%;
+                float: left;
+                clear: right;
+                padding: 0;
+            }
+            .col-sm-4 {
+                padding: 0;
+            }
+            .title_site { 
+                .logo_harim {
+                    width: 20%;
+                    background-size: 88px auto;
+                }
+            }
+            .btn-cta {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+
+/* ======= XSMALL ======*/
+
+@media only screen and (max-width: 479px) {
+    header {
+        .container {
+            .title_site {
+                .logo_harim {
+                    width: 24%;
+                    background-size: 78px auto;
+                }
+            }
+            .btn-cta {
+                margin-top: 15px;
+                padding: 0 22px;
+            }
+        }
+    }
+}

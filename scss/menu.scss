@@ -143,30 +143,40 @@ nav {
         }
     }
     @media (max-width:767px){
-        height: 45px; 
-        width: 105px;
-        border-radius: 5px;
-        margin-left: 10px;   
+        height: 40px; 
+        width: 55px;
+        border-radius: 3px;
+        margin-left: 15px;   
         .menu-desk{
             display: none;
         }
+        .cont_hamburguer {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
         .hamburger {
             min-height: 30px;
-            max-width: 50px;
+            max-width: 45px;
             position: absolute;
-            top: 11px;
-            left: 30px;
+            top: 8px;
+            left: 7px;
+            z-index: 9999;
+            width: 100%;
+            height: 100%;
             .menu-mobile{
                 display: none;
-                height: 150px;
+                height: auto;
+                margin: 0;
+                width: 35px;
                 li{
                     display: inline-block;
-                    width: 200px;
+                    width: 320px;
                     background-color: $c-blue-extra;
                     list-style: none;
                     position: relative;
-                    top: 33px;
-                    left: -70px;
+                    top: 32px;
+                    left: -62px;
                     height: 34px;
                     line-height: 15px;
                     padding: 10px;
@@ -174,14 +184,18 @@ nav {
                         color: white;
                     }
                 }
+                ul {
+                    padding: 0;
+                    display: none;
+                }
             }
         }
         .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
             background-color: white;
             position: absolute;
             width: 40px;
-            height: 4px;
-            border-radius: 5px;
+            height: 3px;
+            border-radius: 2px;
             content: '\00a0';
             transition-timing-function: ease;
             transition-duration: .2s;
@@ -203,4 +217,10 @@ nav {
             transform: translate3d(0,-10px,0) rotate(90deg);
         }
     }
+}
+.cont_nav {
+    height: 50px; 
+    width: 100%;
+    background: white;
+    position: sticky;
 }

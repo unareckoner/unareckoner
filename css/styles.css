@@ -95,7 +95,8 @@ body main p.message {
   text-align: center;
   width: 80%;
   margin: 0 auto; }
-body main .btn-cta {
+body main .btn-cta,
+body main button.btn-cta {
   background: #94bb53;
   color: white;
   font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
@@ -111,10 +112,39 @@ body main .btn-cta {
   height: 45px;
   padding: 0 25px;
   transition: .5s; }
-  body main .btn-cta:hover {
+  body main .btn-cta:hover,
+  body main button.btn-cta:hover {
     background: #73a225;
     text-decoration: none; }
+body main .sublist {
+  padding: 0; }
+  body main .sublist li {
+    list-style: none; }
+body main .cont_center {
+  margin: 0 auto;
+  display: table; }
 
+/* ======= MEDIUM ======*/
+@media only screen and (max-width: 767px) {
+  body main h1 {
+    font-size: 24px;
+    line-height: 1.3em; }
+  body main h2 {
+    font-size: 20px;
+    line-height: 1.3em; }
+  body main h3 {
+    font-size: 18px;
+    line-height: 1.5em; }
+  body main h4 {
+    font-size: 15px;
+    line-height: 1.5em; }
+  body main p {
+    font-size: 13px;
+    line-height: 1.5em; }
+  body main p.message {
+    font-size: 15px;
+    line-height: 2em;
+    width: 90%; } }
 /* ======= HEADER ======= */
 header {
   float: left;
@@ -200,6 +230,65 @@ main {
   float: left;
   width: 100%; }
 
+/* ======= MEDIUM ======*/
+@media only screen and (max-width: 768px) {
+  header {
+    height: 90px; }
+    header .col-md-12,
+    header .col-md-6 {
+      padding: 0; }
+    header .container .title_site .logo_harim {
+      background-size: 78px auto;
+      width: 24%;
+      height: 70px;
+      margin-right: 10px; }
+    header .container .title_site a.subtitle {
+      margin-top: 5px;
+      font-size: 10.5px; }
+    header .container .title_site a.title {
+      font-size: 12px; }
+    header .container .title_site a.subtitle,
+    header .container .title_site a.title {
+      float: left;
+      width: 72%; }
+    header .container ul.social {
+      float: left;
+      margin: 0; }
+      header .container ul.social li a {
+        width: 20px;
+        height: 20px;
+        background-size: auto 20px;
+        margin-right: 5px; }
+    header .container .btn-cta {
+      font-size: 12px;
+      padding: 0 18px;
+      margin-top: 8px; } }
+/* ======= SMALL ======*/
+@media only screen and (max-width: 599px) {
+  header {
+    height: 90px; }
+    header .container {
+      height: 145px; }
+      header .container .col-md-2 {
+        width: 70%;
+        float: left;
+        clear: right;
+        padding: 0; }
+      header .container .col-sm-4 {
+        padding: 0; }
+      header .container .title_site .logo_harim {
+        width: 20%;
+        background-size: 88px auto; }
+      header .container .btn-cta {
+        margin-top: 15px; } }
+/* ======= XSMALL ======*/
+@media only screen and (max-width: 479px) {
+  header .container .title_site .logo_harim {
+    width: 24%;
+    background-size: 78px auto; }
+  header .container .btn-cta {
+    margin-top: 15px;
+    padding: 0 22px; } }
 /* ======= HOME ======= */
 main {
   overflow: hidden;
@@ -570,6 +659,160 @@ main {
         background: transparent url("../images/arrow_next.png") 0 0 no-repeat;
         background-size: 35px auto; }
 
+/* ======= MEDIUM ======*/
+@media only screen and (max-width: 768px) {
+  main {
+    margin-top: 15px; }
+    main .parallax-first {
+      height: auto; }
+      main .parallax-first .sections {
+        height: auto; }
+        main .parallax-first .sections li {
+          height: auto; }
+          main .parallax-first .sections li a {
+            height: auto; }
+            main .parallax-first .sections li a span {
+              height: 100%; }
+              main .parallax-first .sections li a span span {
+                font-size: 12px; }
+          main .parallax-first .sections li a.hosp,
+          main .parallax-first .sections li a.rehab {
+            height: 131px; }
+            main .parallax-first .sections li a.hosp span,
+            main .parallax-first .sections li a.rehab span {
+              height: 100%; }
+            main .parallax-first .sections li a.hosp img,
+            main .parallax-first .sections li a.rehab img {
+              position: relative;
+              width: auto;
+              height: 100%; }
+    main .parallax-second {
+      height: auto;
+      max-width: 100%; }
+      main .parallax-second .benefits .list_ico li {
+        font-size: 12px;
+        width: 32%; }
+        main .parallax-second .benefits .list_ico li span img {
+          margin-bottom: 5px;
+          width: 50%; }
+    main .parallax-third {
+      height: 400px;
+      background-position: 40% 0;
+      background-size: auto 300px; }
+      main .parallax-third .content-banner h2 {
+        width: 50%;
+        font-size: 15px;
+        line-height: 25px; }
+        main .parallax-third .content-banner h2 .comillas {
+          background-position: 0 -5px;
+          width: 30px;
+          height: 20px;
+          background-size: 30px; }
+    main .parallax-four .content {
+      padding: 0 15px; }
+    main .parallax-four .col-set2 .col-1,
+    main .parallax-four .col-set2 .col-2 {
+      width: 100%; }
+    main .parallax-four h2 {
+      font-size: 16px;
+      letter-spacing: 3px;
+      margin: 30px 0;
+      line-height: 25px; }
+    main .parallax-four h2.black {
+      font-size: 15px;
+      letter-spacing: 3px;
+      margin: 0 0 10px 0; }
+    main .parallax-four p {
+      font-size: 13px;
+      margin-bottom: 20px; }
+      main .parallax-four p a {
+        font-size: 13px; }
+    main .parallax-four .cedula {
+      padding: 20px; }
+      main .parallax-four .cedula h4, main .parallax-four .cedula h3 {
+        font-size: 18px;
+        line-height: 1.2em; }
+    main .parallax-four .btn-cta {
+      font-size: 15px;
+      margin: 30px 0 40px; }
+    main .parallax-five .center .cont_txt {
+      width: 100%; }
+    main .parallax-five .center h2 {
+      font-size: 30px; }
+    main .parallax-six .col-set2 .col-1,
+    main .parallax-six .col-set2 .col-2 {
+      width: 100%;
+      padding-bottom: 20px;
+      margin-bottom: 20px; }
+    main .parallax-six .col-set2 .col-1 {
+      border-bottom: 1px solid #9fb6bb; }
+    main .parallax-six img {
+      width: 70%;
+      max-width: 220px; }
+    main .parallax-six .map {
+      width: 80%; }
+    main .parallax-seven .content {
+      width: 550px; } }
+@media only screen and (max-width: 600px) {
+  main .parallax-seven .content {
+    width: 420px; } }
+@media only screen and (max-width: 479px) {
+  main .parallax-first .sections {
+    height: auto; }
+    main .parallax-first .sections li {
+      width: 100%;
+      height: 150px; }
+      main .parallax-first .sections li a {
+        height: 150px; }
+        main .parallax-first .sections li a span {
+          min-height: 0; }
+        main .parallax-first .sections li a:hover span {
+          height: 150px; }
+          main .parallax-first .sections li a:hover span span {
+            height: auto;
+            background: transparent; }
+        main .parallax-first .sections li a.cirug img {
+          position: relative;
+          top: -120px; }
+      main .parallax-first .sections li.second {
+        width: 100%;
+        height: auto; }
+        main .parallax-first .sections li.second a.hosp,
+        main .parallax-first .sections li.second a.rehab {
+          height: 150px;
+          width: 100%; }
+          main .parallax-first .sections li.second a.hosp span,
+          main .parallax-first .sections li.second a.rehab span {
+            height: auto; }
+          main .parallax-first .sections li.second a.hosp:hover span,
+          main .parallax-first .sections li.second a.rehab:hover span {
+            height: 150px; }
+            main .parallax-first .sections li.second a.hosp:hover span span,
+            main .parallax-first .sections li.second a.rehab:hover span span {
+              height: auto;
+              background: transparent; }
+          main .parallax-first .sections li.second a.hosp img,
+          main .parallax-first .sections li.second a.rehab img {
+            width: 100%;
+            height: auto; }
+  main .parallax-second .benefits .list_ico li {
+    width: 100%;
+    margin-bottom: 10px; }
+    main .parallax-second .benefits .list_ico li span img {
+      width: 30%;
+      margin-bottom: 0; }
+    main .parallax-second .benefits .list_ico li span.txt br {
+      display: none; }
+  main .parallax-third {
+    background-position: 70% 0;
+    background-size: auto 350px; }
+    main .parallax-third .content-banner h2 {
+      width: 80%; }
+  main .parallax-seven .content {
+    width: 330px; } }
+@media only screen and (max-width: 320px) {
+  main .parallax-seven .content {
+    width: 260px; } }
 /* /////////////////////*/
 /* ======= MENU ======= */
 nav {
@@ -689,40 +932,52 @@ nav {
           background: none; }
   @media (max-width: 767px) {
     nav {
-      height: 45px;
-      width: 105px;
-      border-radius: 5px;
-      margin-left: 10px; }
+      height: 40px;
+      width: 55px;
+      border-radius: 3px;
+      margin-left: 15px; }
       nav .menu-desk {
         display: none; }
+      nav .cont_hamburguer {
+        width: 100%;
+        height: 100%;
+        position: relative; }
       nav .hamburger {
         min-height: 30px;
-        max-width: 50px;
+        max-width: 45px;
         position: absolute;
-        top: 11px;
-        left: 30px; }
+        top: 8px;
+        left: 7px;
+        z-index: 9999;
+        width: 100%;
+        height: 100%; }
         nav .hamburger .menu-mobile {
           display: none;
-          height: 150px; }
+          height: auto;
+          margin: 0;
+          width: 35px; }
           nav .hamburger .menu-mobile li {
             display: inline-block;
-            width: 200px;
+            width: 320px;
             background-color: #428393;
             list-style: none;
             position: relative;
-            top: 33px;
-            left: -70px;
+            top: 32px;
+            left: -62px;
             height: 34px;
             line-height: 15px;
             padding: 10px; }
             nav .hamburger .menu-mobile li a {
               color: white; }
+          nav .hamburger .menu-mobile ul {
+            padding: 0;
+            display: none; }
       nav .hamburger-inner, nav .hamburger-inner:after, nav .hamburger-inner:before {
         background-color: white;
         position: absolute;
         width: 40px;
-        height: 4px;
-        border-radius: 5px;
+        height: 3px;
+        border-radius: 2px;
         content: '\00a0';
         transition-timing-function: ease;
         transition-duration: .2s;
@@ -738,6 +993,12 @@ nav {
       nav .hamburger.open .hamburger-inner:before {
         transform: translate3d(0, -10px, 0) rotate(90deg); } }
 
+.cont_nav {
+  height: 50px;
+  width: 100%;
+  background: white;
+  position: sticky; }
+
 footer {
   background-color: #3c646e;
   font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
@@ -747,6 +1008,8 @@ footer {
     height: 130px;
     display: table;
     max-width: 1200px; }
+    footer .container .cont_sign {
+      float: left; }
     footer .container ul {
       vertical-align: middle;
       display: table-cell; }
@@ -771,6 +1034,12 @@ footer {
           text-decoration: underline;
           color: white;
           opacity: 0.7; }
+    footer .container .cont_payment {
+      float: right; }
+    footer .container .cont_sign,
+    footer .container .cont_payment {
+      height: 130px;
+      display: table; }
     footer .container .payment {
       vertical-align: middle;
       display: table-cell; }
@@ -793,6 +1062,38 @@ footer {
         footer .container ul li a {
           line-height: 35px; } }
 
+@media only screen and (max-width: 600px) {
+  footer {
+    height: auto; }
+    footer .container {
+      height: auto; }
+      footer .container .cont_sign,
+      footer .container .cont_payment {
+        width: 100%;
+        height: auto;
+        float: none;
+        display: table;
+        margin: 20px auto; }
+        footer .container .cont_sign ul,
+        footer .container .cont_payment ul {
+          padding: 0; }
+      footer .container .payment {
+        text-align: center; }
+        footer .container .payment .cards {
+          padding: 5px; }
+          footer .container .payment .cards img {
+            width: 130px; }
+      footer .container ul li {
+        width: 100%;
+        margin: 0;
+        text-align: center; } }
+@media only screen and (max-width: 320px) {
+  footer .container .payment .cards {
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 5px; }
+    footer .container .payment .cards img {
+      width: 130px; } }
 .padecimientos main {
   background: #bfe0e9; }
   .padecimientos main .banner-men {
@@ -946,25 +1247,25 @@ footer {
     box-shadow: 0 0 0 45px rgba(232, 76, 61, 0); } }
 .experiencia {
   background: #eff8fa; }
-  .experiencia .banner-photos {
+  .experiencia main .banner-photos {
     width: 100%; }
-    .experiencia .banner-photos img {
+    .experiencia main .banner-photos img {
       width: 100%;
       margin: 0 auto;
       max-width: 1500px; }
-  .experiencia h1 {
+  .experiencia main h1 {
     margin: 60px 0 50px 0; }
-  .experiencia h2 {
+  .experiencia main h2 {
     color: #1b1b1b;
     margin-bottom: 70px; }
-  .experiencia .cont_experiencia {
+  .experiencia main .cont_experiencia {
     width: 1000px;
     margin: 0 auto;
     display: table;
     float: none; }
-    .experiencia .cont_experiencia .tabs {
+    .experiencia main .cont_experiencia .tabs {
       margin-bottom: 35px; }
-      .experiencia .cont_experiencia .tabs h3 {
+      .experiencia main .cont_experiencia .tabs h3 {
         font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
         font-size: 23px;
         letter-spacing: 3px;
@@ -980,7 +1281,7 @@ footer {
         margin: 0;
         position: relative;
         transition: 1.5s; }
-        .experiencia .cont_experiencia .tabs h3:after {
+        .experiencia main .cont_experiencia .tabs h3:after {
           content: '';
           background: url("../images/arrow_toggle_down.png") 0 0 no-repeat;
           background-size: 30px auto;
@@ -990,100 +1291,227 @@ footer {
           position: relative;
           transition: 3s;
           top: 5px; }
-      .experiencia .cont_experiencia .tabs h3.active {
+      .experiencia main .cont_experiencia .tabs h3.active {
         width: 100%; }
-        .experiencia .cont_experiencia .tabs h3.active:after {
+        .experiencia main .cont_experiencia .tabs h3.active:after {
           background: url("../images/arrow_toggle_up.png") 0 0 no-repeat;
           background-size: 30px auto; }
-      .experiencia .cont_experiencia .tabs h4 {
+      .experiencia main .cont_experiencia .tabs h4 {
         margin-top: 30px;
         margin-bottom: 5px;
         font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif; }
-      .experiencia .cont_experiencia .tabs p {
+      .experiencia main .cont_experiencia .tabs p {
         line-height: 1.5em;
         margin: 0; }
-      .experiencia .cont_experiencia .tabs .panel {
+      .experiencia main .cont_experiencia .tabs .panel {
         padding: 35px 100px;
         display: none;
         background: #e5f3f7; }
-    .experiencia .cont_experiencia #tab1_ex .cont_txt {
+    .experiencia main .cont_experiencia #tab1_ex .cont_txt {
       width: 85%;
       float: left; }
-    .experiencia .cont_experiencia #tab1_ex .cont_img {
+    .experiencia main .cont_experiencia #tab1_ex .cont_img {
       width: 6%;
       float: right; }
-    .experiencia .cont_experiencia #tab1_ex .panel {
+    .experiencia main .cont_experiencia #tab1_ex .panel {
       float: left; }
-  .experiencia .block_cta {
+  .experiencia main .block_cta {
     margin-top: 130px;
     display: inline-block; }
-    .experiencia .block_cta .message {
+    .experiencia main .block_cta .message {
       width: 82%;
       margin-bottom: 40px; }
-    .experiencia .block_cta .btn-cta {
+    .experiencia main .block_cta .btn-cta {
       margin: 50px auto 100px auto;
       float: none;
       display: table; }
 
-.servicios .cont_banner img {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1500px; }
-.servicios .cont_servicios p {
-  text-align: center;
-  font-size: 18px;
-  width: 80%;
-  margin: 0 auto; }
-.servicios .cont_servicios ul {
-  width: 50%;
-  margin: 50px auto;
-  display: table;
-  padding: 0;
-  font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif; }
-  .servicios .cont_servicios ul li {
-    list-style: none;
-    padding: 10px 0;
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    text-align: center; }
-    .servicios .cont_servicios ul li a {
-      font-size: 20px;
-      color: #3c646e;
-      cursor: pointer;
-      width: 100%;
-      text-align: center;
-      float: left; }
-    .servicios .cont_servicios ul li p {
-      width: 100%; }
-.servicios .cont_servicios .list_contenido {
-  width: 80%;
-  padding: 20px 0;
-  border-top: 1px solid #cae7ef;
-  border-bottom: 1px solid #cae7ef; }
-  .servicios .cont_servicios .list_contenido li {
-    text-align: left; }
-    .servicios .cont_servicios .list_contenido li p {
-      text-align: left;
-      font-size: 15px;
-      width: 100%; }
-  .servicios .cont_servicios .list_contenido h3 {
-    text-align: left;
-    text-transform: none; }
-.servicios .cont_servicios strong {
-  color: #3c646e; }
-.servicios .block_cta {
-  display: table;
-  margin: 100px auto;
-  width: auto; }
-  .servicios .block_cta .message {
-    width: 82%;
+/* ======= LARGE ======*/
+@media only screen and (max-width: 1024px) {
+  .experiencia main .cont_experiencia {
+    width: 100%; } }
+/* ======= MEDIUM ======*/
+@media only screen and (max-width: 767px) {
+  .experiencia main h1 {
+    font-size: 24px; }
+  .experiencia main h2 {
     margin-bottom: 40px; }
-  .servicios .block_cta .btn-cta {
-    margin: 50px auto 100px auto;
-    float: none;
+  .experiencia main .cont_experiencia .tabs {
+    width: 80%;
+    margin: 20px auto; }
+    .experiencia main .cont_experiencia .tabs h3 {
+      font-size: 16px;
+      line-height: 1.5em; }
+    .experiencia main .cont_experiencia .tabs h4 {
+      font-size: 14px;
+      line-height: 1.5em;
+      margin-top: 20px; }
+    .experiencia main .cont_experiencia .tabs .panel {
+      padding: 15px; } }
+/* ======= SMALL ======*/
+@media only screen and (max-width: 599px) {
+  .experiencia main .cont_experiencia #tab1_ex .cont_txt,
+  .experiencia main .cont_experiencia #tab1_ex .cont_img {
+    width: 100%; }
+  .experiencia main .cont_experiencia #tab1_ex .cont_img {
+    display: none; } }
+.servicios {
+  background: #eff8fa; }
+  .servicios .cont_banner img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+    display: table; }
+  .servicios .cont_servicios {
+    max-width: 1110px;
+    margin: 0 auto; }
+    .servicios .cont_servicios p {
+      text-align: center;
+      font-size: 18px;
+      width: 80%;
+      margin: 0 auto; }
+    .servicios .cont_servicios ul {
+      width: 50%;
+      margin: 50px auto;
+      display: table;
+      padding: 0;
+      font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif; }
+      .servicios .cont_servicios ul.cirugia {
+        width: 70%; }
+      .servicios .cont_servicios ul li {
+        list-style: none;
+        padding: 10px 0;
+        width: 100%;
+        float: left;
+        font-size: 18px;
+        text-align: center; }
+        .servicios .cont_servicios ul li a {
+          font-size: 20px;
+          color: #3c646e;
+          cursor: pointer;
+          width: 100%;
+          text-align: center;
+          float: left; }
+        .servicios .cont_servicios ul li p {
+          width: 100%; }
+    .servicios .cont_servicios .list-large {
+      padding: 0;
+      display: table;
+      margin: 30px auto;
+      width: 100%; }
+      .servicios .cont_servicios .list-large li p {
+        text-align: left; }
+    .servicios .cont_servicios .list_contenido {
+      width: 80%;
+      padding: 40px;
+      border-top: 1px solid #cae7ef;
+      border-bottom: 1px solid #cae7ef;
+      background: white; }
+      .servicios .cont_servicios .list_contenido li {
+        text-align: left; }
+        .servicios .cont_servicios .list_contenido li p {
+          text-align: left;
+          font-size: 15px;
+          width: 100%; }
+      .servicios .cont_servicios .list_contenido h2 {
+        margin: 0 0 30px; }
+      .servicios .cont_servicios .list_contenido h3 {
+        text-align: left;
+        text-transform: none; }
+    .servicios .cont_servicios .list-icos {
+      width: auto;
+      margin: 80px auto;
+      display: table; }
+      .servicios .cont_servicios .list-icos li {
+        width: 20%;
+        padding: 0 1.5%;
+        list-style: none;
+        display: inline-block;
+        float: left; }
+        .servicios .cont_servicios .list-icos li img {
+          width: 75%;
+          display: table;
+          margin: 0 auto 20px; }
+        .servicios .cont_servicios .list-icos li p {
+          font-size: 13px;
+          text-align: center;
+          line-height: 1.5em; }
+          .servicios .cont_servicios .list-icos li p strong {
+            width: 100%;
+            display: inline-block;
+            font-size: 15px;
+            margin-bottom: 10px; }
+    .servicios .cont_servicios strong {
+      color: #3c646e; }
+  .servicios .block_cta {
+    display: table;
+    margin: 100px auto;
+    width: auto; }
+    .servicios .block_cta .message {
+      width: 82%;
+      margin-bottom: 40px; }
+    .servicios .block_cta .btn-cta {
+      margin: 50px auto 100px auto;
+      float: none;
+      display: table; }
+
+form {
+  margin: 60px auto;
+  display: table;
+  width: 40%; }
+  form input,
+  form textarea {
+    min-width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: white;
+    color: #313131;
+    font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+    padding: 10px 20px; }
+  form textarea {
+    line-height: 1.5em; }
+  form form div + div {
+    margin-top: 1em; }
+  form label {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color: #313131;
+    font-family: "Gotham-Book", "Trebuchet MS", Arial, sans-serif;
+    text-transform: uppercase; }
+  form input, form textarea {
+    font: 1em sans-serif;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  form input:focus, form textarea:focus {
+    border-color: #cae7ef; }
+  form textarea {
+    vertical-align: top;
+    height: 10em;
+    resize: vertical; }
+  form button {
+    width: 100%;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: "Gotham-Medium", "Trebuchet MS", Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    background: transparent;
+    max-width: 300px;
+    margin: 0 auto;
     display: table; }
 
+@media only screen and (max-width: 600px) {
+  form {
+    width: 90%; } }
 .top-banner-dash {
   background-color: #e1261c;
   display: table;

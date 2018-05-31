@@ -7,6 +7,9 @@ footer{
         height: 130px;
         display: table;
         max-width: 1200px;
+        .cont_sign {
+            float: left;
+        }
         ul{
             vertical-align: middle;
             display: table-cell;
@@ -38,6 +41,14 @@ footer{
                 }
             }
         }
+        .cont_payment {
+            float: right;
+        }
+        .cont_sign,
+        .cont_payment {
+           height: 130px;
+           display: table;
+        }
         .payment {
             vertical-align: middle;
             display: table-cell;
@@ -64,6 +75,57 @@ footer{
                     a{
                         line-height: 35px;
 
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    footer {
+        height: auto;
+        .container {
+            height: auto;
+            .cont_sign,
+            .cont_payment {
+                width: 100%;
+                height: auto;
+                float: none;
+                display: table;
+                margin: 20px auto;
+                ul {
+                    padding: 0;
+                }
+            }
+            .payment {
+                text-align: center;
+                .cards {
+                    padding: 5px;
+                    img {
+                        width: 130px;
+                    }
+                }
+            }
+            ul {
+                li {
+                    width: 100%;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    footer {
+        .container {
+            .payment {
+                .cards {
+                    margin-left: 0;
+                    margin-top: 10px;
+                    padding: 5px;
+                    img {
+                        width: 130px;
                     }
                 }
             }

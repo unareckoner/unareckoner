@@ -27,13 +27,18 @@
                         <li><p>Inmovilizaciones</p></li>
                         <li><p>Yesos, férulas y fibras de vidrio</p></li>
                         <li><p>Infiltraciones</p></li>
+                        <li><p>Lesiones de miembro torácico.</p></li>
+                        <li><p>Lesiones deportivas de hombro, rodilla y tobillo.</p></li>
+                        <li><p>Lesiones ligamentarias.</p></li>
+                        <li><p>Columna Vertebral Degenerativa.</p></li>
+                        <li><p>Escoliasis de Columna Vertebral.</p></li>
                     </ul>
 
                     <ul class="list_contenido">
                         <h2>Tipos de lesiones</h2>
                         <li>
                             <h3>Lesión Traumática</h3>
-                            <p>Una lesión es el daño producido a los tejidos por un agente o fuerza externo y que de acuerdo a su intensidad puede causar daños como abrasiones por fricción, heridas de diferente espesor y longitud, ruptura total o parcial de músculo, tendones, ligamentos, luxaciones o fracturas que pueden ser cerradas o expuestas, únicas o múltiples. Estas lesiones de acuerdo a su gravedad deberán tener una atención temprana, eficiente y profesional para minimizar las secuelas y complicaciones.</p>
+                            <p>Una lesión es el daño producido a los tejidos por un agente o fuerza externo y que de acuerdo a su intensidad puede causar daños como abrasiones por fricción, heridas de diferente espesor y longitud, rotura total o parcial de músculo, tendones, ligamentos, luxaciones o fracturas que pueden ser cerradas o expuestas, únicas o múltiples. Estas lesiones de acuerdo a su gravedad deberán tener una atención temprana, eficiente y profesional para minimizar las secuelas y complicaciones.</p>
                         </li>
                         <li>
                             <h3>Lesión Crónica</h3>
@@ -48,7 +53,7 @@
                     <div class="block_cta">
                     	<p class="message">Valoro de forma integral al paciente, desde sus antecedentes de enfermedades previas, hasta la convivencia interfamiliar, para encontrar en conjunto médico-paciente el tratamiento más adecuado para su enfermedad o lesión ortopédica.</p>
 
-                    	<button class="btn-cta">Agenda tu consulta</button>
+                    	<button class="btn-cta" onClick="window.open('https://live.vcita.com/site/l3mr675bnttbflne')">Agenda tu consulta</button>
                     </div>
 			    </div>    
 			</section>

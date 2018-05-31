@@ -19,16 +19,16 @@
 			    	<h1>Servicios</h1>
 			    	<ul>
                         <li><a href="tratamientos.php">Tratamientos Ortopédicos</a></li>
-                        <li><a>Cirugías</a></li>
-                        <li><a>Rehabilitación</a></li>
-                        <li><a>Hospitalización</a></li>
-                        <li><a>Lesiones Deportivas</a></li>
+                        <li><a href="cirugias.php">Cirugías</a></li>
+                        <li><a href="rehabilitacion.php">Rehabilitación</a></li>
+                        <li><a href="hospitalizacion.php">Hospitalización</a></li>
+                        <li><a href="medicina_deporte.php">Lesiones Deportivas</a></li>
                     </ul> 
                     
                     <div class="block_cta">
                     	<p class="message">Valoración precisa y opciones para tu tratamiento, manejo médico, terapia física específica o cirugía.</p>
 
-                    	<button class="btn-cta">Agenda tu consulta</button>
+                    	<button class="btn-cta" onClick="window.open('https://live.vcita.com/site/l3mr675bnttbflne')">Agenda tu consulta</button>
                     </div>
 			    </div>    
 			</section>

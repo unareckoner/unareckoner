@@ -32,23 +32,23 @@
                     <div class="">
                         <ul class="sections">
                             <li class="first">
-                                <a class="cirug">
+                                <a class="cirug" href="html/cirugias.php">
                                     <span class="hover"><span>Cirugías</span></span>
                                     <img src="images/banner1.png" alt="Cirugías">
                                 </a>
                             </li>
                             <li class="second">
-                                <a class="rehab">
+                                <a class="rehab" href="html/rehabilitacion.php">
                                     <span class="hover"><span>Rehabilitacion</span></span>
                                     <img src="images/banner2.png" alt="Cirugías">
                                 </a>
-                                <a class="hosp">
+                                <a class="hosp" href="html/hospitalizacion.php">
                                     <span class="hover"><span>Hospitalización</span></span>
-                                    <img src="images/banner3.png" alt="Cirugías">
+                                    <img src="images/banner3a.png" alt="Cirugías">
                                 </a>
                             </li>
                             <li class="third">
-                                <a class="sport">
+                                <a class="sport" href="html/medicina_deporte.php">
                                     <span class="hover"><span>Medicina del deporte</span></span>
                                     <img src="images/banner4.png" alt="Medicina del deporte">
                                 </a>
@@ -111,7 +111,7 @@
                                     <h3>Cédula especialista</h3>
                                     <h4>8536436</h4>
                                 </div>
-                                <a class="btn-cta">Agenda tu consulta</a>
+                                <a class="btn-cta" onClick="window.open('https://live.vcita.com/site/l3mr675bnttbflne')">Agenda tu consulta</a>
                             </div>
                         </div>
                     </div>
@@ -137,14 +137,14 @@
                                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9526887704988!2d-99.16372538562788!3d19.414450046292796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3bf9d41b0d%3A0x83b19a5a49a68049!2sHospital+starmedica+Centro!5e0!3m2!1ses!2smx!4v1519053725033" width="435" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 <h3 class="location">Hospital Star Médica</h3> 
                                 <p><span>Centro Queretaro, Torre 1, Consultorio 101.</span></p>
-                                <p>Horario de atención: <br><span>Lunes, Miércoles y Viernes <br>10:00 - 18:00</span></p>
+                                <p>Horario de atención: <br><span>Lunes, Miércoles y Viernes <br>8:00 - 13:00</span></p>
                             </div>
                             <div class="col-2">
                                 <img src="images/logo_hospital_tlalpan.png" alt="Hospital Tlalpan">
                                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15062.900360458352!2d-99.15313247941896!3d19.294317693995115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01acf414be85%3A0xfbf05dc1212fa162!2sHospital+Tlalpan!5e0!3m2!1ses!2smx!4v1519054197331" width="435" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 <h3 class="location">Hospital Tlalpan</h3> 
                                 <p><span>San Ignacio No. 24, Col. Villa Lázaro Cárdenas.<br>C.P 14370. Del. Tlalpan. CDMX</span></p>
-                                <p>Horario de atención: <br><span>Martes y Jueves <br>10:00 - 18:00</span></p>
+                                <p>Horario de atención: <br><span>Martes y Jueves <br>8:00 - 13:00</span></p>
                             </div>
                         </div>
                     </div>

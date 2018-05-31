@@ -432,3 +432,256 @@ main{
         }
     }
 }
+
+/* ======= MEDIUM ======*/
+
+@media only screen and (max-width: 768px) {
+    main {
+        margin-top: 15px;
+        .parallax-first {
+            height: auto;
+            .sections {
+                height: auto;
+                li {
+                    height: auto;
+                    a {
+                        height: auto;
+                        span {
+                            height: 100%;
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    a.hosp,
+                    a.rehab {
+                        height: 131px;
+                        span {
+                            height: 100%;
+                        }
+                        img {
+                            position: relative;
+                            width: auto;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .parallax-second {
+            height: auto;
+            max-width: 100%;
+            .benefits {
+                .list_ico li {
+                    font-size: 12px;
+                    width: 32%;
+                    span img {
+                        margin-bottom: 5px;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .parallax-third {
+            height: 400px;
+            background-position: 40% 0;
+            background-size: auto 300px;
+            .content-banner {
+                h2 {
+                    width: 50%;
+                    font-size: 15px;
+                    line-height: 25px;
+                    .comillas {
+                        background-position: 0 -5px;
+                        width: 30px;
+                        height: 20px;
+                        background-size: 30px;
+                    }
+                }
+            }
+        }
+        .parallax-four {
+            .content {
+                padding: 0 15px;
+            }
+            .col-set2 {
+                .col-1,
+                .col-2 {
+                    width: 100%;
+                }
+            }
+            h2 {
+                font-size: 16px;
+                letter-spacing: 3px;
+                margin: 30px 0;
+                line-height: 25px;
+            }
+            h2.black {
+                font-size: 15px;
+                letter-spacing: 3px;
+                margin: 0 0 10px 0;
+            }
+            p {
+                font-size: 13px;
+                margin-bottom: 20px;
+                a {
+                    font-size: 13px;
+                }
+            }
+            .cedula {
+                padding: 20px;
+                h4, h3 {
+                    font-size: 18px;
+                    line-height: 1.2em;
+                }
+            }
+            .btn-cta {
+                font-size: 15px;
+                margin: 30px 0 40px;
+            }
+        }
+        .parallax-five {
+            .center {
+                .cont_txt {
+                    width: 100%;
+                }
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+        .parallax-six {
+            .col-set2 {
+                .col-1,
+                .col-2 {
+                    width: 100%;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                }
+                .col-1 {
+                    border-bottom: 1px solid $c-gray;
+                }
+            }
+            img {
+                width: 70%;
+                max-width: 220px;
+            }
+            .map {
+                width: 80%;
+            }
+        }
+        .parallax-seven {
+            .content {
+                width: 550px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    main {
+        .parallax-seven {
+            .content {
+                width: 420px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 479px) {
+    main {
+        .parallax-first {
+            .sections {
+                height: auto;
+                li {
+                    width: 100%;
+                    height: 150px;
+                    a {
+                        height: 150px;
+                        span {
+                            min-height: 0;
+                        }
+                        &:hover {
+                            span {
+                                height: 150px;
+                                span {
+                                    height: auto;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                        &.cirug {
+                            img {
+                                position: relative;
+                                top: -120px;
+                            }
+                        }
+                    }
+                    &.second {
+                        width: 100%;
+                        height: auto;
+                        a.hosp,
+                        a.rehab {
+                            height: 150px;
+                            width: 100%;
+                            span {
+                                height: auto;
+                            }
+                            &:hover {
+                                span {
+                                    height: 150px;
+                                    span {
+                                        height: auto;
+                                        background: transparent;
+                                    }
+                                }
+                            }
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .parallax-second {
+            .benefits {
+                .list_ico li {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    span img {
+                        width: 30%;
+                        margin-bottom: 0;
+                    }
+                    span.txt {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .parallax-third {
+            background-position: 70% 0;
+            background-size: auto 350px;
+            .content-banner {
+                h2 {
+                    width: 80%;
+                }
+            }
+        }
+        .parallax-seven {
+            .content {
+                width: 330px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    main {
+        .parallax-seven {
+            .content {
+                width: 260px;
+            }
+        }
+    }
+}

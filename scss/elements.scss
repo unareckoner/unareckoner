@@ -53,8 +53,9 @@ body main {
         width: 80%;
         margin: 0 auto;
     }
-    .btn-cta{
-        background: $c-green;;
+    .btn-cta,
+    button.btn-cta {
+        background: $c-green;
         color: white;
         font-family: $gotham-medium;
         font-size: 18px;
@@ -72,6 +73,50 @@ body main {
         &:hover {
             background: $c-green-dark;
             text-decoration: none;
+        }
+    }
+    .sublist {
+        padding: 0;
+        li {
+            list-style: none;
+        }
+    }
+    .cont_center {
+        margin: 0 auto;
+        display: table;
+    }
+}
+
+/* ======= MEDIUM ======*/
+
+@media only screen and (max-width: 767px) {
+    body {
+        main {
+            h1 {
+                font-size: 24px;
+                line-height: 1.3em;
+            }
+            h2 {
+                font-size: 20px;
+                line-height: 1.3em;
+            }
+            h3 {
+                font-size: 18px;
+                line-height: 1.5em;
+            }
+            h4 {
+                font-size: 15px;
+                line-height: 1.5em;
+            }
+            p {
+                font-size: 13px;
+                line-height: 1.5em;
+            }
+            p.message {
+                font-size: 15px;
+                line-height: 2em;
+                width: 90%;
+            }
         }
     }
 }

@@ -1,0 +1,71 @@
+form {
+    margin: 60px auto;
+    display: table;
+    width: 40%;
+    input,
+    textarea {
+        min-width: 200px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        background: white;
+        color: $c-text;
+        font-family: $gotham-book;
+        border: 1px solid transparent;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+    }
+    textarea {
+        line-height: 1.5em;
+    }
+    form div + div {
+        margin-top: 1em;
+    }
+    label {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        color: $c-text;
+        font-family: $gotham-book;
+        text-transform: uppercase;
+    }
+    input, textarea {
+        font: 1em sans-serif;
+        width: 100%;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    input:focus, textarea:focus {
+        border-color: $c-blue-clear;
+    }
+    textarea {
+        vertical-align: top;
+        height: 10em;
+        resize: vertical;
+    }
+    button {
+        width: 100%;
+        border: none;
+        text-align: center;
+        text-transform: uppercase;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-family: $gotham-medium;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        background: transparent;
+        max-width: 300px;
+        margin: 0 auto;
+        display: table;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    
+}
